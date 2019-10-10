@@ -1,0 +1,153 @@
+
+Àcom.salesmanager.core.business.repositories.catalog.product.relationship.ProductRelationshipRepositoryImpl#listByProducts(Lcom/salesmanager/core/model/catalog/product/Product;)Ljava/util/List;°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.javaë" ë(0"paramAnnotations*€
+paramAnnotations°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.javaë0 ë(A£
+ 
+°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.javaê ê(
+
+%17"
+__annotate*
+java.lang.Override*@
+>
+product3com.salesmanager.core.model.catalog.product.Product
+Š
+°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.javaë9 ë(@>
+product3com.salesmanager.core.model.catalog.product.Product"__annotation*
+
+%17*
+1*¢;
+1°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.javaí í((îë
+°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.javaí í(&
+%0java.lang.StringBuilder"java.lang.StringBuilder€
+ý
+°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.javaí í((
+%1"!java.lang.StringBuilder#<init>()V*
+
+%0java.lang.StringBuilderü
+ù
+°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.javaí í()
+qsjava.lang.StringBuilder"__id*
+
+%0java.lang.StringBuilderŽ‹
+°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.javaî î(8
+%2java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
+
+qsjava.lang.StringBuilder*-+
+)select pr from ProductRelationship as pr 2append(Ljava/lang/String;)‚ÿ
+°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.javaï ï(,
+%3java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
+
+qsjava.lang.StringBuilder*!
+left join fetch pr.product p 2append(Ljava/lang/String;)Š‡
+°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.javað ð(4
+%4java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
+
+qsjava.lang.StringBuilder*)'
+%left join fetch pr.relatedProduct rp 2append(Ljava/lang/String;)‰†
+°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.javañ ñ(3
+%5java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
+
+qsjava.lang.StringBuilder*(&
+$left join fetch rp.attributes pattr 2append(Ljava/lang/String;)‡„
+°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.javaò ò(1
+%6java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
+
+qsjava.lang.StringBuilder*&$
+"left join fetch rp.categories rpc 2append(Ljava/lang/String;)‡„
+°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.javaó ó(1
+%7java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
+
+qsjava.lang.StringBuilder*&$
+"left join fetch p.descriptions pd 2append(Ljava/lang/String;)‰†
+°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.javaô ô(3
+%8java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
+
+qsjava.lang.StringBuilder*(&
+$left join fetch rp.descriptions rpd 2append(Ljava/lang/String;)óð
+°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.javaö ö(
+%9java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
+
+qsjava.lang.StringBuilder*
+where p.id=:id2append(Ljava/lang/String;)óð
+°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.java÷ ÷(
+%10java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
+
+qsjava.lang.StringBuilder*
+ or rp.id=:id2append(Ljava/lang/String;)²¯
+°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.javaü ü(
+%11java.lang.String"4java.lang.StringBuilder#toString()Ljava/lang/String;*
+
+qsjava.lang.StringBuilder2
+toString()ð
+í
+°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.javaü ü( 
+hqljava.lang.String"__id*
+
+%11java.lang.StringÜ
+Ù
+°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.javaý ý(&
+%12javax.persistence.EntityManager"__id*v*tl
+jcom.salesmanager.core.business.repositories.catalog.product.relationship.ProductRelationshipRepositoryImpl"
+em–“
+°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.javaý ý(
+%13javax.persistence.Query"Xjavax.persistence.EntityManager#createQuery(Ljava/lang/String;)Ljavax/persistence/Query;*(
+&
+%12javax.persistence.EntityManager*
+
+hqljava.lang.String2createQuery(Ljava/lang/String;)ü
+ù
+°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.javaý ý( 
+qjavax.persistence.Query"__id* 
+
+%13javax.persistence.Queryåâ
+°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.javaÿ ÿ()
+%14java.lang.Long"Kcom.salesmanager.core.model.catalog.product.Product#getId()Ljava/lang/Long;*@
+>
+product3com.salesmanager.core.model.catalog.product.Product2getId()°­
+°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.javaÿ ÿ(*
+%15javax.persistence.Query"cjavax.persistence.Query#setParameter(Ljava/lang/String;Ljava/lang/Object;)Ljavax/persistence/Query;*
+
+qjavax.persistence.Query*
+id*
+
+%14java.lang.Long22setParameter(Ljava/lang/String;Ljava/lang/Object;)·´
+°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.javaƒ) ƒ(:
+%16java.util.List"7javax.persistence.Query#getResultList()Ljava/util/List;*
+
+qjavax.persistence.Query2getResultList()ò
+ï
+°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.java‚ ƒ(;
+	relationsjava.util.List"__id*
+
+%16java.util.List"Ò
+°
+£/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/product/relationship/ProductRelationshipRepositoryImpl.java† †(
+
+	relationsjava.util.List:>
+product3com.salesmanager.core.model.catalog.product.ProductBnl
+jcom.salesmanager.core.business.repositories.catalog.product.relationship.ProductRelationshipRepositoryImpl

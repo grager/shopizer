@@ -1,0 +1,298 @@
+
+•com.salesmanager.core.business.modules.cms.product.gcp.GCPProductContentFileManager#getProductImage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/salesmanager/core/model/catalog/product/file/ProductImageSize;)Lcom/salesmanager/core/model/content/OutputContentFile;—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaH H(*"paramAnnotations*¦
+24—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaL L(Iú
+÷
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaL L(I+
+storage com.google.cloud.storage.Storage"__id*(
+&
+%5 com.google.cloud.storage.Storage‚
+ÿ
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaN N(&
+%6java.lang.String"rcom.salesmanager.core.business.modules.cms.product.gcp.GCPProductContentFileManager#bucketName()Ljava/lang/String;*WU
+Scom.salesmanager.core.business.modules.cms.product.gcp.GCPProductContentFileManager*
+23*™
+13—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaY Y(Gú
+÷
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaY Y(G-
+outputStreamjava.io.ByteArrayOutputStream"__id*&
+$
+%14java.io.ByteArrayOutputStreamõ
+ò
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaZ Z(-
+
+%16int"Porg.apache.commons.io.IOUtils#copy(Ljava/io/InputStream;Ljava/io/OutputStream;)I*!"
+org.apache.commons.io.IOUtils*$
+"
+inputStreamjava.io.InputStream*/
+-
+outputStreamjava.io.ByteArrayOutputStream*
+12*ó
+25—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaL L(HÌÉ
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaL L(H&
+%5 com.google.cloud.storage.Storage"Fcom.google.cloud.ServiceOptions#getService()Lcom/google/cloud/Service;*/
+-
+%4'com.google.cloud.storage.StorageOptions2getService()*
+24*é
+14—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaX X(3å
+â
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaX X(3"
+inputStreamjava.io.InputStream"__id*
+
+%13java.io.InputStreamâß
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaY/ Y(D$
+%14java.io.ByteArrayOutputStream"java.io.ByteArrayOutputStreamõ
+ò
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaY+ Y(F
+%15"'java.io.ByteArrayOutputStream#<init>()V*&
+$
+%14java.io.ByteArrayOutputStream*
+13*‡
+26—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaL L(&à
+Ý
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaL L(;-
+%4'com.google.cloud.storage.StorageOptions"ecom.google.cloud.storage.StorageOptions#getDefaultInstance()Lcom/google/cloud/storage/StorageOptions;*+")
+'com.google.cloud.storage.StorageOptions*
+25*ˆ
+15—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaV V()ò
+ï
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaV V()&
+readercom.google.cloud.ReadChannel"__id*%
+#
+%12com.google.cloud.ReadChannelì
+é
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaX X(3
+%13java.io.InputStream"gjava.nio.channels.Channels#newInputStream(Ljava/nio/channels/ReadableByteChannel;)Ljava/io/InputStream;*"
+java.nio.channels.Channels*(
+&
+readercom.google.cloud.ReadChannel*
+14*ö
+27—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaJ J("Ï
+Ì
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaJ J(#"
+inputStreamjava.io.InputStream"__id*
+""*
+26*¹
+16—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaT T(vò
+ï
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaT T(v%
+blobcom.google.cloud.storage.Blob"__id*&
+$
+%11com.google.cloud.storage.Blobš
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaV V((#
+%12com.google.cloud.ReadChannel"ucom.google.cloud.storage.Blob#reader([Lcom/google/cloud/storage/Blob$BlobSourceOption;)Lcom/google/cloud/ReadChannel;*'
+%
+blobcom.google.cloud.storage.Blob29reader([Lcom/google/cloud/storage/Blob$BlobSourceOption;)*
+15*Ó
+17—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaT T(u¬©
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaT T(u$
+%11com.google.cloud.storage.Blob"fcom.google.cloud.storage.Storage#get(Lcom/google/cloud/storage/BlobId;)Lcom/google/cloud/storage/Blob;*-
++
+storage com.google.cloud.storage.Storage*(
+&
+%10com.google.cloud.storage.BlobId2&get(Lcom/google/cloud/storage/BlobId;)*
+16*¸
+18—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaT T(t‘
+Ž
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaT T(t&
+%10com.google.cloud.storage.BlobId"icom.google.cloud.storage.BlobId#of(Ljava/lang/String;Ljava/lang/String;)Lcom/google/cloud/storage/BlobId;*#"!
+com.google.cloud.storage.BlobId* 
+
+
+bucketNamejava.lang.String*
+
+%9java.lang.String*
+17*÷
+19—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaTi T(rÐ
+Í
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaT4 T(s
+%9java.lang.String"¸com.salesmanager.core.business.modules.cms.product.gcp.GCPProductContentFileManager#filePath(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;*WU
+Scom.salesmanager.core.business.modules.cms.product.gcp.GCPProductContentFileManager*'
+%
+merchantStoreCodejava.lang.String*!
+
+productCodejava.lang.String*
+
+%8java.lang.String*
+
+	imageNamejava.lang.String*
+18*ž
+paramAnnotations—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaH* I(.ð
+í
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaG G(
+%0"
+__annotate*
+java.lang.Override*'
+%
+merchantStoreCodejava.lang.StringÚ
+×
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaH2 H(C%
+merchantStoreCodejava.lang.String"__annotation*
+
+%0ê
+ç
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaG G(
+%1"
+__annotate*
+java.lang.Override*!
+
+productCodejava.lang.StringÔ
+Ñ
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaHL H(W
+productCodejava.lang.String"__annotation*
+
+%1è
+å
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaG G(
+%2"
+__annotate*
+java.lang.Override*
+
+	imageNamejava.lang.StringÒ
+Ï
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaI I(
+	imageNamejava.lang.String"__annotation*
+
+%2”
+‘
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaG G(
+%3"
+__annotate*
+java.lang.Override*K
+I
+sizeAcom.salesmanager.core.model.catalog.product.file.ProductImageSizeþ
+û
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaI) I(-I
+sizeAcom.salesmanager.core.model.catalog.product.file.ProductImageSize"__annotation*
+
+%3*
+27*ù
+8—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaa a("Ù
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaa a(=
+;
+ct5com.salesmanager.core.model.content.OutputContentFile*œ
+9—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.java] ]($÷ô
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.java] ]($
+%21void"Pcom.salesmanager.core.model.content.ContentFile#setFileName(Ljava/lang/String;)V*=
+;
+ct5com.salesmanager.core.model.content.OutputContentFile*
+
+%20java.lang.String2setFileName(Ljava/lang/String;)*
+8*Ú
+20—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaT T(³°
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaT\ T(g
+%8java.lang.String"'java.lang.Enum#name()Ljava/lang/String;*K
+I
+sizeAcom.salesmanager.core.model.catalog.product.file.ProductImageSize2name()*
+19*Ã
+21—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaQ Q("¢
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaQ Q(
+""*Ï
+10—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.java] ](©¦
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.java] ](#
+%20java.lang.String"=com.google.cloud.storage.BlobInfo#getName()Ljava/lang/String;*'
+%
+blobcom.google.cloud.storage.Blob2	getName()*
+9*ï
+11—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.java[ [(5 
+
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.java[ [(5;
+ct5com.salesmanager.core.model.content.OutputContentFile"__id*>
+<
+%175com.salesmanager.core.model.content.OutputContentFile¥¢
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.java\ \(
+%19void"_com.salesmanager.core.model.content.OutputContentFile#setFile(Ljava/io/ByteArrayOutputStream;)V*=
+;
+ct5com.salesmanager.core.model.content.OutputContentFile*/
+-
+outputStreamjava.io.ByteArrayOutputStream2(setFile(Ljava/io/ByteArrayOutputStream;)*
+10*û
+23—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaN N('Ý
+Ú
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaN N('
+
+bucketNamejava.lang.String"__id*
+
+%6java.lang.Stringð
+í
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.javaP
+ P(0
+%7boolean"—com.salesmanager.core.business.modules.cms.product.gcp.GCPProductContentFileManager#bucketExists(Lcom/google/cloud/storage/Storage;Ljava/lang/String;)Z*WU
+Scom.salesmanager.core.business.modules.cms.product.gcp.GCPProductContentFileManager*-
++
+storage com.google.cloud.storage.Storage* 
+
+
+bucketNamejava.lang.String*
+20
+21*á
+12—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.java[ [(4’
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.java[! [(2<
+%175com.salesmanager.core.model.content.OutputContentFile"5com.salesmanager.core.model.content.OutputContentFile¥
+¢
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/product/gcp/GCPProductContentFileManager.java[ [(4
+%18"?com.salesmanager.core.model.content.OutputContentFile#<init>()V*>
+<
+%175com.salesmanager.core.model.content.OutputContentFile*
+11:%
+merchantStoreCodejava.lang.String:
+productCodejava.lang.String:
+	imageNamejava.lang.String:I
+sizeAcom.salesmanager.core.model.catalog.product.file.ProductImageSizeBWU
+Scom.salesmanager.core.business.modules.cms.product.gcp.GCPProductContentFileManager

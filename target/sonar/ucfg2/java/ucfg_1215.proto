@@ -1,0 +1,532 @@
+
+˘com.salesmanager.shop.store.api.v1.product.ProductImageApi#uploadImages(Ljava/lang/Long;[Lorg/springframework/web/multipart/MultipartFile;Lcom/salesmanager/core/model/merchant/MerchantStore;Lcom/salesmanager/core/model/reference/language/Language;)V}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaF F("paramAnnotations*—
+26}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java_ _(¡æ
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java_ _($
+%29boolean"Pcom.salesmanager.core.model.catalog.product.image.ProductImage#isDefaultImage()Z*I
+G
+image>com.salesmanager.core.model.catalog.product.image.ProductImage2isDefaultImage()*
+22
+23*Ä
+29}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java\ \(5π
+∂
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java\ \(5
+imagesjava.util.Set"__id*
+
+%27java.util.Set¥
+±
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java] ](*
+%28boolean"Porg.apache.commons.collections4.CollectionUtils#isEmpty(Ljava/util/Collection;)Z*3"1
+/org.apache.commons.collections4.CollectionUtils*
+
+imagesjava.util.Set*
+22
+23*Ñ(
+paramAnnotations}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaF J(#Ë
+Â
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java> >(%
+%0"
+__annotate*:8
+6org.springframework.web.bind.annotation.ResponseStatus*
+
+idjava.lang.LongË
+Â
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java? A("
+%1"
+__annotate*:8
+6org.springframework.web.bind.annotation.RequestMapping*
+
+idjava.lang.Long⁄
+◊
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaB E(
+%2"
+__annotate*,*
+(io.swagger.annotations.ApiImplicitParams*
+
+idjava.lang.LongÊ
+„
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaG G(
+%3"
+__annotate*86
+4org.springframework.web.bind.annotation.PathVariable*
+
+idjava.lang.Long∆
+√
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaG G(
+idjava.lang.Long"__annotation*
+
+%0*
+
+%1*
+
+%2*
+
+%3È
+Ê
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java> >(%
+%4"
+__annotate*:8
+6org.springframework.web.bind.annotation.ResponseStatus*
+
+uploadfiles$ArrayÈ
+Ê
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java? A("
+%5"
+__annotate*:8
+6org.springframework.web.bind.annotation.RequestMapping*
+
+uploadfiles$Array€
+ÿ
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaB E(
+%6"
+__annotate*,*
+(io.swagger.annotations.ApiImplicitParams*
+
+uploadfiles$ArrayÁ
+‰
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaH H(
+%7"
+__annotate*86
+4org.springframework.web.bind.annotation.RequestParam*
+
+uploadfiles$Array«
+ƒ
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaH- H(8
+uploadfiles$Array"__annotation*
+
+%4*
+
+%5*
+
+%6*
+
+%7ó
+î
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java> >(%
+%8"
+__annotate*:8
+6org.springframework.web.bind.annotation.ResponseStatus*E
+C
+merchantStore2com.salesmanager.core.model.merchant.MerchantStoreó
+î
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java? A("
+%9"
+__annotate*:8
+6org.springframework.web.bind.annotation.RequestMapping*E
+C
+merchantStore2com.salesmanager.core.model.merchant.MerchantStoreä
+á
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaB E(
+%10"
+__annotate*,*
+(io.swagger.annotations.ApiImplicitParams*E
+C
+merchantStore2com.salesmanager.core.model.merchant.MerchantStoreè
+å
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaI I(
+%11"
+__annotate*1/
+-springfox.documentation.annotations.ApiIgnore*E
+C
+merchantStore2com.salesmanager.core.model.merchant.MerchantStore˜
+Ù
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaI I(,C
+merchantStore2com.salesmanager.core.model.merchant.MerchantStore"__annotation*
+
+%8*
+
+%9*
+
+%10*
+
+%11ò
+ï
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java> >(%
+%12"
+__annotate*:8
+6org.springframework.web.bind.annotation.ResponseStatus*E
+C
+language7com.salesmanager.core.model.reference.language.Languageò
+ï
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java? A("
+%13"
+__annotate*:8
+6org.springframework.web.bind.annotation.RequestMapping*E
+C
+language7com.salesmanager.core.model.reference.language.Languageä
+á
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaB E(
+%14"
+__annotate*,*
+(io.swagger.annotations.ApiImplicitParams*E
+C
+language7com.salesmanager.core.model.reference.language.Languageè
+å
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaJ J(
+%15"
+__annotate*1/
+-springfox.documentation.annotations.ApiIgnore*E
+C
+language7com.salesmanager.core.model.reference.language.Language˘
+ˆ
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaJ J("C
+language7com.salesmanager.core.model.reference.language.Language"__annotation*
+
+%12*
+
+%13*
+
+%14*
+
+%15*
+42*√
+30}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java[  [(%∑¥
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java\! \(4
+%27java.util.Set"Ncom.salesmanager.core.model.catalog.product.Product#getImages()Ljava/util/Set;*@
+>
+product3com.salesmanager.core.model.catalog.product.Product2getImages()*
+29*¯
+32}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaX( X(Sãà
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaX X('F
+%25?com.salesmanager.shop.store.api.exception.UnauthorizedException"?com.salesmanager.shop.store.api.exception.UnauthorizedExceptionﬂ
+‹
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaX X(T
+%26"[com.salesmanager.shop.store.api.exception.UnauthorizedException#<init>(Ljava/lang/String;)V*H
+F
+%25?com.salesmanager.shop.store.api.exception.UnauthorizedException*-+
+)Resource not authorized for this merchant*
+3*‹
+10}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javap p(—Œ
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javap p(.
+%40void"Rcom.salesmanager.core.model.catalog.product.image.ProductImage#setDefaultImage(Z)V*P
+N
+productImage>com.salesmanager.core.model.catalog.product.image.ProductImage*
+""2setDefaultImage(Z)*
+8*Â
+34}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaW: W(Z’“
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaW: W(Z
+
+%24int"java.lang.Integer#intValue()I*
+
+%23java.lang.Integer2
+intValue()*
+30
+32*˘
+12}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javam
+ m(ÍÁ
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javam
+ m(*
+%39void"Åcom.salesmanager.core.model.catalog.product.image.ProductImage#setProduct(Lcom/salesmanager/core/model/catalog/product/Product;)V*P
+N
+productImage>com.salesmanager.core.model.catalog.product.image.ProductImage*@
+>
+product3com.salesmanager.core.model.catalog.product.Product2AsetProduct(Lcom/salesmanager/core/model/catalog/product/Product;)*
+8
+10*«
+35}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaW: W(Gª∏
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaW: W(O
+%23java.lang.Integer"Mcom.salesmanager.core.model.merchant.MerchantStore#getId()Ljava/lang/Integer;*E
+C
+merchantStore2com.salesmanager.core.model.merchant.MerchantStore2getId()*
+34*í
+13}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javal
+ l(KÜÉ
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javal
+ l(K
+%38void"ccom.salesmanager.core.model.catalog.product.image.ProductImage#setProductImage(Ljava/lang/String;)V*P
+N
+productImage>com.salesmanager.core.model.catalog.product.image.ProductImage*
+
+%37java.lang.String2#setProductImage(Ljava/lang/String;)*
+12*·
+36}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaW	 W(6’“
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaW	 W(6
+
+%22int"java.lang.Integer#intValue()I*
+
+%21java.lang.Integer2
+intValue()*
+35*€
+14}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javal
+ l(œÃ
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javal' l(J
+%37java.lang.String"Worg.springframework.web.multipart.MultipartFile#getOriginalFilename()Ljava/lang/String;*B
+@
+multipartFile/org.springframework.web.multipart.MultipartFile2getOriginalFilename()*
+13*Ω
+37}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaW	 W(+±Æ
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaW	 W(+
+%21java.lang.Integer"Mcom.salesmanager.core.model.merchant.MerchantStore#getId()Ljava/lang/Integer;*;
+9
+%202com.salesmanager.core.model.merchant.MerchantStore2getId()*
+36*ç
+15}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javak
+ k(?Å˛
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javak
+ k(?
+%36void"_com.salesmanager.core.model.catalog.product.image.ProductImage#setImage(Ljava/io/InputStream;)V*P
+N
+productImage>com.salesmanager.core.model.catalog.product.image.ProductImage*
+
+%35java.io.InputStream2setImage(Ljava/io/InputStream;)*
+14*õ
+38}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaW	 W(èå
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaW	 W(#9
+%202com.salesmanager.core.model.merchant.MerchantStore"zcom.salesmanager.core.model.catalog.product.Product#getMerchantStore()Lcom/salesmanager/core/model/merchant/MerchantStore;*@
+>
+product3com.salesmanager.core.model.catalog.product.Product2getMerchantStore()*
+37*˚
+16}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaj
+ j(9°
+û
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaj
+ j(9N
+productImage>com.salesmanager.core.model.catalog.product.image.ProductImage"__id*G
+E
+%33>com.salesmanager.core.model.catalog.product.image.ProductImageÀ»
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javak  k(>
+%35java.io.InputStream"Uorg.springframework.web.multipart.MultipartFile#getInputStream()Ljava/io/InputStream;*B
+@
+multipartFile/org.springframework.web.multipart.MultipartFile2getInputStream()*
+15*¥
+17}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaj& j(8âÜ
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaj* j(6E
+%33>com.salesmanager.core.model.catalog.product.image.ProductImage">com.salesmanager.core.model.catalog.product.image.ProductImageú
+ô
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaj& j(8
+%34"Hcom.salesmanager.core.model.catalog.product.image.ProductImage#<init>()V*G
+E
+%33>com.salesmanager.core.model.catalog.product.image.ProductImage*
+16*¨
+19}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javai i(ùö
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javai i($
+%32boolean":org.springframework.web.multipart.MultipartFile#isEmpty()Z*B
+@
+multipartFile/org.springframework.web.multipart.MultipartFile2	isEmpty()*
+17
+7*û
+0 "ñ
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaÄ Ä(
+implicit return*
+2}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java~( ~(Dèå
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java~ ~('H
+%47Acom.salesmanager.shop.store.api.exception.ServiceRuntimeException"Acom.salesmanager.shop.store.api.exception.ServiceRuntimeException‘
+—
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java~ ~(E
+%48"]com.salesmanager.shop.store.api.exception.ServiceRuntimeException#<init>(Ljava/lang/String;)V*J
+H
+%47Acom.salesmanager.shop.store.api.exception.ServiceRuntimeException*
+Error while creating image*
+0*¬
+3}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java| |(™
+ß
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java| |(
+ejava.lang.Exception"__id*
+""©
+¶
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java} }(
+%45org.slf4j.Logger"__id*
+""ﬂ‹
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java} }(:
+%46void"@org.slf4j.Logger#error(Ljava/lang/String;Ljava/lang/Throwable;)V*
+
+%45org.slf4j.Logger*%#
+!Error while creating ProductImage*
+
+ejava.lang.Exception2.error(Ljava/lang/String;Ljava/lang/Throwable;)*
+2*¢
+4}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javay y(ª
+∏
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javay y(X
+%43Qcom.salesmanager.core.business.services.catalog.product.image.ProductImageService"__id*W*U<
+:com.salesmanager.shop.store.api.v1.product.ProductImageApi"
+productImageService⁄◊
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javay y(H
+%44void"™com.salesmanager.core.business.services.catalog.product.image.ProductImageService#addProductImages(Lcom/salesmanager/core/model/catalog/product/Product;Ljava/util/List;)V*Z
+X
+%43Qcom.salesmanager.core.business.services.catalog.product.image.ProductImageService*@
+>
+product3com.salesmanager.core.model.catalog.product.Product*%
+#
+contentImagesListjava.util.List2WaddProductImages(Lcom/salesmanager/core/model/catalog/product/Product;Ljava/util/List;)*
+0*–
+6}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javax
+ x(√
+¿
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javax
+ x(7
+%42boolean"Sorg.apache.commons.collections4.CollectionUtils#isNotEmpty(Ljava/util/Collection;)Z*3"1
+/org.apache.commons.collections4.CollectionUtils*%
+#
+contentImagesListjava.util.List*
+4
+0*‡
+7}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javah h(&“
+œ
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javah h(&@
+multipartFile/org.springframework.web.multipart.MultipartFile"__id*
+""*
+6
+19*•
+8}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javat
+ t(õ
+ò
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javat
+ t(-
+%41boolean"
+__arrayAdd*%
+#
+contentImagesListjava.util.List*: *P
+N
+productImage>com.salesmanager.core.model.catalog.product.image.ProductImage*
+7*
+40}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaR, R(?ìê
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaR R(+J
+%18Ccom.salesmanager.shop.store.api.exception.ResourceNotFoundException"Ccom.salesmanager.shop.store.api.exception.ResourceNotFoundExceptionœ
+Ã
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaR R(@
+%19"_com.salesmanager.shop.store.api.exception.ResourceNotFoundException#<init>(Ljava/lang/String;)V*L
+J
+%18Ccom.salesmanager.shop.store.api.exception.ResourceNotFoundException*
+Product not found*
+3*ñ
+41}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaO O(3Ü
+É
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaO O(3>
+product3com.salesmanager.core.model.catalog.product.Product"__id*<
+:
+%173com.salesmanager.core.model.catalog.product.Product*
+38
+40*≠
+42}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaO O(&´
+®
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaO O(&M
+%16Fcom.salesmanager.core.business.services.catalog.product.ProductService"__id*R*P<
+:com.salesmanager.shop.store.api.v1.product.ProductImageApi"
+productServiceÛ
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaO O(2:
+%173com.salesmanager.core.model.catalog.product.Product"®com.salesmanager.core.business.services.common.generic.SalesManagerEntityService#getById(Ljava/io/Serializable;)Lcom/salesmanager/core/model/generic/SalesManagerEntity;*O
+M
+%16Fcom.salesmanager.core.business.services.catalog.product.ProductService*
+
+idjava.lang.Long2getById(Ljava/io/Serializable;)*
+41*÷
+21}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaf f(KÀ
+»
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaf f(K#
+contentImagesListjava.util.List"__id*
+
+%30java.util.ArrayList*
+7*à
+22}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaf- f(J≥∞
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaf1 f(H
+%30java.util.ArrayList"java.util.ArrayList∆
+√
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.javaf- f(J
+%31"java.util.ArrayList#<init>()V*
+
+%30java.util.ArrayList*
+21*È
+23}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java^ ^(Ÿ
+÷
+}
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ProductImageApi.java^ ^(G
+image>com.salesmanager.core.model.catalog.product.image.ProductImage"__id*
+""*
+26
+22:
+idjava.lang.Long:
+uploadfiles$Array:C
+merchantStore2com.salesmanager.core.model.merchant.MerchantStore:C
+language7com.salesmanager.core.model.reference.language.LanguageB><
+:com.salesmanager.shop.store.api.v1.product.ProductImageApi

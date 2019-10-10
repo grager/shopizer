@@ -1,0 +1,157 @@
+
+Ãcom.salesmanager.core.business.repositories.catalog.category.CategoryRepositoryImpl#countProductsByCategories(Lcom/salesmanager/core/model/merchant/MerchantStore;Ljava/util/List;)Ljava/util/List;—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java (0"paramAnnotations*ñ
+paramAnnotations—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java0 (]‡
+„
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java (
+
+%15"
+__annotate*
+java.lang.Override*=
+;
+store2com.salesmanager.core.model.merchant.MerchantStoreñ
+î
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java? (D;
+store2com.salesmanager.core.model.merchant.MerchantStore"__annotation*
+
+%15é
+æ
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java (
+
+%16"
+__annotate*
+java.lang.Override*
+
+categoryIdsjava.util.ListÓ
+Ð
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.javaQ (\
+categoryIdsjava.util.List"__annotation*
+
+%16*
+1*·/
+1—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java ((ÕÒ
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java (&
+%0java.lang.StringBuilder"java.lang.StringBuilderç
+ä
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java ((
+%1"!java.lang.StringBuilder#<init>()V*
+
+%0java.lang.StringBuilderã
+à
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java ()
+qsjava.lang.StringBuilder"__id*
+
+%0java.lang.StringBuilder†ƒ
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java (I
+%2java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
+
+qsjava.lang.StringBuilder*><
+:select categories, count(product.id) from Product product 2append(Ljava/lang/String;)õò
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java (8
+%3java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
+
+qsjava.lang.StringBuilder*-+
+)inner join product.categories categories 2append(Ljava/lang/String;)êç
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java (-
+%4java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
+
+qsjava.lang.StringBuilder*" 
+where categories.id in (:cid) 2append(Ljava/lang/String;)†ƒ
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java (I
+%5java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
+
+qsjava.lang.StringBuilder*><
+:and product.available=true and product.dateAvailable<=:dt 2append(Ljava/lang/String;)âß
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java (%
+%6java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
+
+qsjava.lang.StringBuilder*
+group by categories.id2append(Ljava/lang/String;)˜•
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java (
+%7java.lang.String"4java.lang.StringBuilder#toString()Ljava/lang/String;*
+
+qsjava.lang.StringBuilder2
+toString()Ö
+Ó
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java ( 
+hqljava.lang.String"__id*
+
+%7java.lang.String«
+¨
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java (%
+%8javax.persistence.EntityManager"__id*_*]U
+Scom.salesmanager.core.business.repositories.catalog.category.CategoryRepositoryImpl"
+emûø
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java ($
+%9javax.persistence.Query"Xjavax.persistence.EntityManager#createQuery(Ljava/lang/String;)Ljavax/persistence/Query;*'
+%
+%8javax.persistence.EntityManager*
+
+hqljava.lang.String2createQuery(Ljava/lang/String;)â
+ß
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java (%
+qjavax.persistence.Query"__id*
+
+%9javax.persistence.Query 
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java! !('
+%10javax.persistence.Query"cjavax.persistence.Query#setParameter(Ljava/lang/String;Ljava/lang/Object;)Ljavax/persistence/Query;*
+
+qjavax.persistence.Query*
+cid*
+
+categoryIdsjava.util.List22setParameter(Ljava/lang/String;Ljava/lang/Object;)ÄÁ
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java" "("
+%11java.util.Date"java.util.Date×
+Ô
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java" "($
+%12"java.util.Date#<init>()V*
+
+%11java.util.Date—”
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java" "(%
+%13javax.persistence.Query"cjavax.persistence.Query#setParameter(Ljava/lang/String;Ljava/lang/Object;)Ljavax/persistence/Query;*
+
+qjavax.persistence.Query*
+dt*
+
+%11java.util.Date22setParameter(Ljava/lang/String;Ljava/lang/Object;)ž›
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java' '(,
+%14java.util.List"7javax.persistence.Query#getResultList()Ljava/util/List;*
+
+qjavax.persistence.Query2getResultList()Ö
+Ó
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java& '(-
+countsjava.util.List"__id*
+
+%14java.util.List"¶
+—
+Œ/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/repositories/catalog/category/CategoryRepositoryImpl.java* *(
+
+countsjava.util.List:;
+store2com.salesmanager.core.model.merchant.MerchantStore:
+categoryIdsjava.util.ListBWU
+Scom.salesmanager.core.business.repositories.catalog.category.CategoryRepositoryImpl

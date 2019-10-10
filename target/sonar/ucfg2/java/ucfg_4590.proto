@@ -1,0 +1,254 @@
+
+âcom.salesmanager.core.business.services.catalog.product.ProductServiceImpl#delete(Lcom/salesmanager/core/model/catalog/product/Product;)Vê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java‘ ‘("paramAnnotations*ú
+13ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java’ ’(º
+π
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java’ ’(
+%0org.slf4j.Logger"__id*
+""öó
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java’ ’("
+
+%1void"+org.slf4j.Logger#debug(Ljava/lang/String;)V*
+
+%0org.slf4j.Logger*
+Deleting product2debug(Ljava/lang/String;)Ã
+…
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java÷ ÷(59
+%23com.salesmanager.core.model.catalog.product.Product"torg.apache.commons.lang3.Validate#notNull(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;*%"#
+!org.apache.commons.lang3.Validate*@
+>
+product3com.salesmanager.core.model.catalog.product.Product*
+Product cannot be null¢ü
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java◊ ◊(-8
+%32com.salesmanager.core.model.merchant.MerchantStore"zcom.salesmanager.core.model.catalog.product.Product#getMerchantStore()Lcom/salesmanager/core/model/merchant/MerchantStore;*@
+>
+product3com.salesmanager.core.model.catalog.product.Product2getMerchantStore()÷
+”
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java◊ ◊(Y8
+%42com.salesmanager.core.model.merchant.MerchantStore"torg.apache.commons.lang3.Validate#notNull(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;*%"#
+!org.apache.commons.lang3.Validate*:
+8
+%32com.salesmanager.core.model.merchant.MerchantStore*+)
+'MerchantStore cannot be null in productƒ¡
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.javaÿ ÿ((
+%5java.lang.Long"Kcom.salesmanager.core.model.catalog.product.Product#getId()Ljava/lang/Long;*@
+>
+product3com.salesmanager.core.model.catalog.product.Product2getId()Ì
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.javaÿ ÿ()9
+%63com.salesmanager.core.model.catalog.product.Product"ôcom.salesmanager.core.business.services.catalog.product.ProductServiceImpl#getById(Ljava/lang/Long;)Lcom/salesmanager/core/model/catalog/product/Product;*NL
+Jcom.salesmanager.core.business.services.catalog.product.ProductServiceImpl*
+
+%5java.lang.Long2getById(Ljava/lang/Long;)ô
+ñ
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.javaÿ ÿ()>
+product3com.salesmanager.core.model.catalog.product.Product"__id*;
+9
+%63com.salesmanager.core.model.catalog.product.Product·ﬁ
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.javaŸ Ÿ(
+
+%7void"Scom.salesmanager.core.model.catalog.product.Product#setCategories(Ljava/util/Set;)V*@
+>
+product3com.salesmanager.core.model.catalog.product.Product*
+""2setCategories(Ljava/util/Set;) «
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java€ €(0
+%8java.util.Set"Ncom.salesmanager.core.model.catalog.product.Product#getImages()Ljava/util/Set;*@
+>
+product3com.salesmanager.core.model.catalog.product.Product2getImages()Ã
+…
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java€ €(1
+imagesjava.util.Set"__id*
+
+%8java.util.Set*
+10*£
+2ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.javaÎ Î(&Ç
+ˇ
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.javaÎ Î(&\
+relationshipLcom.salesmanager.core.model.catalog.product.relationship.ProductRelationship"__id*
+""*
+3
+1*Ÿ
+3ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.javaÏ Ï(Ù
+Ò
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.javaÏ Ï(f
+%19_com.salesmanager.core.business.services.catalog.product.relationship.ProductRelationshipService"__id*n*lL
+Jcom.salesmanager.core.business.services.catalog.product.ProductServiceImpl"
+productRelationshipServiceƒ¡
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.javaÏ Ï(2
+%20void"ícom.salesmanager.core.business.services.common.generic.SalesManagerEntityService#delete(Lcom/salesmanager/core/model/generic/SalesManagerEntity;)V*h
+f
+%19_com.salesmanager.core.business.services.catalog.product.relationship.ProductRelationshipService*^
+\
+relationshipLcom.salesmanager.core.model.catalog.product.relationship.ProductRelationship2@delete(Lcom/salesmanager/core/model/generic/SalesManagerEntity;)*
+2*ƒ
+
+5ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.javaÍ, Í(FÙ
+Ò
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.javaÍ, Í(Ff
+%17_com.salesmanager.core.business.services.catalog.product.relationship.ProductRelationshipService"__id*n*lL
+Jcom.salesmanager.core.business.services.catalog.product.ProductServiceImpl"
+productRelationshipService÷”
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.javaÍ, Í(]
+%18java.util.List"¥com.salesmanager.core.business.services.catalog.product.relationship.ProductRelationshipService#listByProduct(Lcom/salesmanager/core/model/catalog/product/Product;)Ljava/util/List;*h
+f
+%17_com.salesmanager.core.business.services.catalog.product.relationship.ProductRelationshipService*@
+>
+product3com.salesmanager.core.model.catalog.product.Product2DlistByProduct(Lcom/salesmanager/core/model/catalog/product/Product;)÷
+”
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.javaÍ Í(^
+relationshipsjava.util.List"__id*
+
+%18java.util.List*
+2*ë
+6ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.javaÂ Â(
+Ì
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.javaÂ Â(J
+review@com.salesmanager.core.model.catalog.product.review.ProductReview"__id*
+""*
+5
+7*©
+7ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.javaÊ Ê(‚
+ﬂ
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.javaÊ Ê(Z
+%15Scom.salesmanager.core.business.services.catalog.product.review.ProductReviewService"__id*h*fL
+Jcom.salesmanager.core.business.services.catalog.product.ProductServiceImpl"
+productReviewService¶£
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.javaÊ Ê(&
+%16void"ícom.salesmanager.core.business.services.common.generic.SalesManagerEntityService#delete(Lcom/salesmanager/core/model/generic/SalesManagerEntity;)V*\
+Z
+%15Scom.salesmanager.core.business.services.catalog.product.review.ProductReviewService*L
+J
+review@com.salesmanager.core.model.catalog.product.review.ProductReview2@delete(Lcom/salesmanager/core/model/generic/SalesManagerEntity;)*
+6*Ö
+9ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java· ·(	⁄◊
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java· ·(
+%12void"Ocom.salesmanager.core.model.catalog.product.Product#setImages(Ljava/util/Set;)V*@
+>
+product3com.salesmanager.core.model.catalog.product.Product*
+""2setImages(Ljava/util/Set;)‚
+ﬂ
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java‰  ‰(4Z
+%13Scom.salesmanager.core.business.services.catalog.product.review.ProductReviewService"__id*h*fL
+Jcom.salesmanager.core.business.services.catalog.product.ProductServiceImpl"
+productReviewService“œ
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java‰  ‰(U
+%14java.util.List"≤com.salesmanager.core.business.services.catalog.product.review.ProductReviewService#getByProductNoCustomers(Lcom/salesmanager/core/model/catalog/product/Product;)Ljava/util/List;*\
+Z
+%13Scom.salesmanager.core.business.services.catalog.product.review.ProductReviewService*@
+>
+product3com.salesmanager.core.model.catalog.product.Product2NgetByProductNoCustomers(Lcom/salesmanager/core/model/catalog/product/Product;)–
+Õ
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java‰ ‰(V
+reviewsjava.util.List"__id*
+
+%14java.util.List*
+6*ü
+paramAnnotationsê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java‘ ‘($Ç
+ˇ
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java” ”(
+
+%9"
+__annotate*
+java.lang.Override*@
+>
+product3com.salesmanager.core.model.catalog.product.ProductÏ
+È
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java‘ ‘(#>
+product3com.salesmanager.core.model.catalog.product.Product"__annotation*
+
+%9*
+13*ê
+10ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java› ›(Ì
+Í
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java› ›(G
+image>com.salesmanager.core.model.catalog.product.image.ProductImage"__id*
+""*
+9
+11*∞
+0 "®
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.javaÚ Ú(
+implicit return*Ã
+11ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.javaﬁ ﬁ(ﬂ
+‹
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.javaﬁ ﬁ(X
+%10Qcom.salesmanager.core.business.services.catalog.product.image.ProductImageService"__id*g*eL
+Jcom.salesmanager.core.business.services.catalog.product.ProductServiceImpl"
+productImageService «
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.javaﬁ ﬁ(0
+%11void"ßcom.salesmanager.core.business.services.catalog.product.image.ProductImageService#removeProductImage(Lcom/salesmanager/core/model/catalog/product/image/ProductImage;)V*Z
+X
+%10Qcom.salesmanager.core.business.services.catalog.product.image.ProductImageService*I
+G
+image>com.salesmanager.core.model.catalog.product.image.ProductImage2TremoveProductImage(Lcom/salesmanager/core/model/catalog/product/image/ProductImage;)*
+10*¨
+1ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.javaÔ Ô(Ü
+É
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.javaÔ Ô(
+%21void"ñcom.salesmanager.core.business.services.common.generic.SalesManagerEntityServiceImpl#delete(Lcom/salesmanager/core/model/generic/SalesManagerEntity;)V*
+""*@
+>
+product3com.salesmanager.core.model.catalog.product.Productƒ
+¡
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java (C
+%22<com.salesmanager.core.business.services.search.SearchService"__id*a*_L
+Jcom.salesmanager.core.business.services.catalog.product.ProductServiceImpl"
+searchService£†
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java (69
+%232com.salesmanager.core.model.merchant.MerchantStore"zcom.salesmanager.core.model.catalog.product.Product#getMerchantStore()Lcom/salesmanager/core/model/merchant/MerchantStore;*@
+>
+product3com.salesmanager.core.model.catalog.product.Product2getMerchantStore()òï
+ê
+É/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/services/catalog/product/ProductServiceImpl.java (@
+%24void"¥com.salesmanager.core.business.services.search.SearchService#deleteIndex(Lcom/salesmanager/core/model/merchant/MerchantStore;Lcom/salesmanager/core/model/catalog/product/Product;)V*E
+C
+%22<com.salesmanager.core.business.services.search.SearchService*;
+9
+%232com.salesmanager.core.model.merchant.MerchantStore*@
+>
+product3com.salesmanager.core.model.catalog.product.Product2vdeleteIndex(Lcom/salesmanager/core/model/merchant/MerchantStore;Lcom/salesmanager/core/model/catalog/product/Product;)*
+0:>
+product3com.salesmanager.core.model.catalog.product.ProductBNL
+Jcom.salesmanager.core.business.services.catalog.product.ProductServiceImpl

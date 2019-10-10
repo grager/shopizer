@@ -1,0 +1,499 @@
+
+µcom.salesmanager.shop.admin.controller.products.ProductImagesController#saveProductImagesUrl(Lcom/salesmanager/core/model/catalog/product/image/ProductImage;Lorg/springframework/validation/BindingResult;Lorg/springframework/ui/Model;Ljavax/servlet/http/HttpServletRequest;Ljava/util/Locale;)Ljava/lang/String;ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaœ œ(#"paramAnnotations*Ω
+
+2ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÌ	 Ì(∫
+∑
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÌ	 Ì(
+%43org.slf4j.Logger"__id*
+""©¶
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÌ4 Ì(Q
+
+%44int"6org.springframework.validation.Errors#getErrorCount()I*?
+=
+bindingResult,org.springframework.validation.BindingResult2getErrorCount()”–
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÌ	 Ì(R
+%45void"<org.slf4j.Logger#info(Ljava/lang/String;Ljava/lang/Object;)V*
+
+%43org.slf4j.Logger*
+Found {} Validation errors*
+
+
+%44int2*info(Ljava/lang/String;Ljava/lang/Object;)∫
+∑
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÓ Ó(A
+%46java.lang.String"__id*
+"""´
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÓ Ó(B
+
+%46java.lang.String*ô
+3ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÍ Í(”–
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÍ Í('#
+%41org.springframework.ui.Model"morg.springframework.ui.Model#addAttribute(Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/ui/Model;*'
+%
+modelorg.springframework.ui.Model*	
+product*@
+>
+product3com.salesmanager.core.model.catalog.product.Product22addAttribute(Ljava/lang/String;Ljava/lang/Object;)•¢
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÏ Ï(
+%42boolean"2org.springframework.validation.Errors#hasErrors()Z*?
+=
+bindingResult,org.springframework.validation.BindingResult2hasErrors()*
+2
+1*ê
+4ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÊ% Ê(4£
+†
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÊ= Ê(E-
+%36&com.salesmanager.shop.utils.LabelUtils"__id*Y*WI
+Gcom.salesmanager.shop.admin.controller.products.ProductImagesController"
+
+messages´®
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÊ= Ê(i
+%37java.lang.String"icom.salesmanager.shop.utils.LabelUtils#getMessage(Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;*/
+-
+%36&com.salesmanager.shop.utils.LabelUtils*
+message.error*
+
+localejava.util.Locale20getMessage(Ljava/lang/String;Ljava/util/Locale;)Ì
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÊ Ê($0
+%38)org.springframework.validation.FieldError")org.springframework.validation.FieldErrorÚ
+Ô
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÊ Ê(j
+%39"iorg.springframework.validation.FieldError#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V*2
+0
+%38)org.springframework.validation.FieldError*
+productImages*	
+image*
+
+%37java.lang.StringÅ
+˛
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÊ Ê(k2
+error)org.springframework.validation.FieldError"__id*2
+0
+%38)org.springframework.validation.FieldErrorµ≤
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÁ Á( 
+%40void"dorg.springframework.validation.BindingResult#addError(Lorg/springframework/validation/ObjectError;)V*?
+=
+bindingResult,org.springframework.validation.BindingResult*4
+2
+error)org.springframework.validation.FieldError26addError(Lorg/springframework/validation/ObjectError;)*
+3*ú
+5ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÂ Â(†ù
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÂ Â(9
+%312com.salesmanager.core.model.merchant.MerchantStore"zcom.salesmanager.core.model.catalog.product.Product#getMerchantStore()Lcom/salesmanager/core/model/merchant/MerchantStore;*@
+>
+product3com.salesmanager.core.model.catalog.product.Product2getMerchantStore()¬ø
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÂ Â('
+%32java.lang.Integer"Mcom.salesmanager.core.model.merchant.MerchantStore#getId()Ljava/lang/Integer;*;
+9
+%312com.salesmanager.core.model.merchant.MerchantStore2getId()Ê„
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÂ Â(2
+
+%33int"java.lang.Integer#intValue()I*
+
+%32java.lang.Integer2
+intValue()ƒ¡
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÂ4 Â(A
+%34java.lang.Integer"Mcom.salesmanager.core.model.merchant.MerchantStore#getId()Ljava/lang/Integer;*=
+;
+store2com.salesmanager.core.model.merchant.MerchantStore2getId()Ê„
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÂ4 Â(L
+
+%35int"java.lang.Integer#intValue()I*
+
+%34java.lang.Integer2
+intValue()*
+3
+4*ˆ
+6ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java‡% ‡(4£
+†
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java‡= ‡(E-
+%25&com.salesmanager.shop.utils.LabelUtils"__id*Y*WI
+Gcom.salesmanager.shop.admin.controller.products.ProductImagesController"
+
+messages´®
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java‡= ‡(i
+%26java.lang.String"icom.salesmanager.shop.utils.LabelUtils#getMessage(Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;*/
+-
+%25&com.salesmanager.shop.utils.LabelUtils*
+message.error*
+
+localejava.util.Locale20getMessage(Ljava/lang/String;Ljava/util/Locale;)Ì
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java‡ ‡($0
+%27)org.springframework.validation.FieldError")org.springframework.validation.FieldErrorÚ
+Ô
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java‡ ‡(j
+%28"iorg.springframework.validation.FieldError#<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V*2
+0
+%27)org.springframework.validation.FieldError*
+productImages*	
+image*
+
+%26java.lang.StringÅ
+˛
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java‡ ‡(k2
+error)org.springframework.validation.FieldError"__id*2
+0
+%27)org.springframework.validation.FieldErrorµ≤
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java· ·( 
+%29void"dorg.springframework.validation.BindingResult#addError(Lorg/springframework/validation/ObjectError;)V*?
+=
+bindingResult,org.springframework.validation.BindingResult*4
+2
+error)org.springframework.validation.FieldError26addError(Lorg/springframework/validation/ObjectError;)∫
+∑
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java‚
+ ‚(<
+%30java.lang.String"__id*
+"""´
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java‚ ‚(=
+
+%30java.lang.String*ú*
+7ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java“ “(„
+‡
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java“ “(
+
+%0void"ócom.salesmanager.shop.admin.controller.products.ProductImagesController#setMenu(Lorg/springframework/ui/Model;Ljavax/servlet/http/HttpServletRequest;)V*KI
+Gcom.salesmanager.shop.admin.controller.products.ProductImagesController*'
+%
+modelorg.springframework.ui.Model*2
+0
+request%javax.servlet.http.HttpServletRequestπ
+∂
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java‘< ‘(Q
+%1java.lang.String"__id*
+""ÏÈ
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java‘' ‘(R
+%2java.lang.Object"Ojavax.servlet.ServletRequest#getAttribute(Ljava/lang/String;)Ljava/lang/Object;*2
+0
+request%javax.servlet.http.HttpServletRequest*
+
+%1java.lang.String2 getAttribute(Ljava/lang/String;)
+Ì
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java‘ ‘(S;
+store2com.salesmanager.core.model.merchant.MerchantStore"__id*
+
+%2java.lang.Objectøº
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java÷/ ÷(F
+%3java.util.HashMap"java.util.HashMap—
+Œ
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java÷+ ÷(H
+%4"java.util.HashMap#<init>()V*
+
+%3java.util.HashMap—
+Œ
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java÷ ÷(I
+
+mediaTypesjava.util.Map"__id*
+
+%3java.util.HashMapÊ
+„
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java◊ ◊($
+%5java.lang.String"__mapSet*
+
+
+mediaTypesjava.util.Map*
+0*	
+IMAGEÊ
+„
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÿ ÿ($
+%6java.lang.String"__mapSet*
+
+
+mediaTypesjava.util.Map*
+1*	
+VIDEOÁ‰
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java⁄ ⁄(2"
+%7org.springframework.ui.Model"morg.springframework.ui.Model#addAttribute(Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/ui/Model;*'
+%
+modelorg.springframework.ui.Model*
+productImage*P
+N
+productImage>com.salesmanager.core.model.catalog.product.image.ProductImage22addAttribute(Ljava/lang/String;Ljava/lang/Object;)≤Ø
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java€ €(-"
+%8org.springframework.ui.Model"morg.springframework.ui.Model#addAttribute(Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/ui/Model;*'
+%
+modelorg.springframework.ui.Model*
+
+mediaTypes*
+
+
+mediaTypesjava.util.Map22addAttribute(Ljava/lang/String;Ljava/lang/Object;)»
+≈
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java› ›("L
+%9Fcom.salesmanager.core.business.services.catalog.product.ProductService"__id*_*]I
+Gcom.salesmanager.shop.admin.controller.products.ProductImagesController"
+productService›⁄
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java›+ ›(?
+%10java.lang.Long"Vcom.salesmanager.core.model.catalog.product.image.ProductImage#getId()Ljava/lang/Long;*P
+N
+productImage>com.salesmanager.core.model.catalog.product.image.ProductImage2getId()ÑÅ
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java› ›(@:
+%113com.salesmanager.core.model.catalog.product.Product"®com.salesmanager.core.business.services.common.generic.SalesManagerEntityService#getById(Ljava/io/Serializable;)Lcom/salesmanager/core/model/generic/SalesManagerEntity;*N
+L
+%9Fcom.salesmanager.core.business.services.catalog.product.ProductService*
+
+%10java.lang.Long2getById(Ljava/io/Serializable;)ó
+î
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java› ›(A>
+product3com.salesmanager.core.model.catalog.product.Product"__id*<
+:
+%113com.salesmanager.core.model.catalog.product.Product”–
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaﬁ ﬁ('#
+%12org.springframework.ui.Model"morg.springframework.ui.Model#addAttribute(Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/ui/Model;*'
+%
+modelorg.springframework.ui.Model*	
+product*@
+>
+product3com.salesmanager.core.model.catalog.product.Product22addAttribute(Ljava/lang/String;Ljava/lang/Object;)*
+5
+6*∫%
+paramAnnotationsé
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaœ# œ(÷∂
+≥
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÕ Õ(%
+%13"
+__annotate*<:
+8org.springframework.security.access.prepost.PreAuthorize*P
+N
+productImage>com.salesmanager.core.model.catalog.product.image.ProductImage¥
+±
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaŒ Œ(Y
+%14"
+__annotate*:8
+6org.springframework.web.bind.annotation.RequestMapping*P
+N
+productImage>com.salesmanager.core.model.catalog.product.image.ProductImage¥
+±
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaœ$ œ(I
+%15"
+__annotate*:8
+6org.springframework.web.bind.annotation.ModelAttribute*P
+N
+productImage>com.salesmanager.core.model.catalog.product.image.ProductImageî
+ë
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaœJ œ(P
+%16"
+__annotate*
+javax.validation.Valid*P
+N
+productImage>com.salesmanager.core.model.catalog.product.image.ProductImageï
+í
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaœd œ(pN
+productImage>com.salesmanager.core.model.catalog.product.image.ProductImage"__annotation*
+
+%13*
+
+%14*
+
+%15*
+
+%16•
+¢
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÕ Õ(%
+%17"
+__annotate*<:
+8org.springframework.security.access.prepost.PreAuthorize*?
+=
+bindingResult,org.springframework.validation.BindingResult£
+†
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaŒ Œ(Y
+%18"
+__annotate*:8
+6org.springframework.web.bind.annotation.RequestMapping*?
+=
+bindingResult,org.springframework.validation.BindingResultÙ
+Ò
+è
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaœÜ œ(ì=
+bindingResult,org.springframework.validation.BindingResult"__annotation*
+
+%17*
+
+%18ç
+ä
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÕ Õ(%
+%19"
+__annotate*<:
+8org.springframework.security.access.prepost.PreAuthorize*'
+%
+modelorg.springframework.ui.Modelã
+à
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaŒ Œ(Y
+%20"
+__annotate*:8
+6org.springframework.web.bind.annotation.RequestMapping*'
+%
+modelorg.springframework.ui.Model‹
+Ÿ
+è
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaœ† œ(•%
+modelorg.springframework.ui.Model"__annotation*
+
+%19*
+
+%20ò
+ï
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÕ Õ(%
+%21"
+__annotate*<:
+8org.springframework.security.access.prepost.PreAuthorize*2
+0
+request%javax.servlet.http.HttpServletRequestñ
+ì
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaŒ Œ(Y
+%22"
+__annotate*:8
+6org.springframework.web.bind.annotation.RequestMapping*2
+0
+request%javax.servlet.http.HttpServletRequestÁ
+‰
+è
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaœ¿ œ(«0
+request%javax.servlet.http.HttpServletRequest"__annotation*
+
+%21*
+
+%22Ç
+ˇ
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÕ Õ(%
+%23"
+__annotate*<:
+8org.springframework.security.access.prepost.PreAuthorize*
+
+localejava.util.LocaleÄ
+˝
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaŒ Œ(Y
+%24"
+__annotate*:8
+6org.springframework.web.bind.annotation.RequestMapping*
+
+localejava.util.Locale—
+Œ
+è
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaœœ œ(’
+localejava.util.Locale"__annotation*
+
+%23*
+
+%24*
+7*É
+1ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÒ Ò(˚¯
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÒ Ò("
+%47void"Åcom.salesmanager.core.model.catalog.product.image.ProductImage#setProduct(Lcom/salesmanager/core/model/catalog/product/Product;)V*P
+N
+productImage>com.salesmanager.core.model.catalog.product.image.ProductImage*@
+>
+product3com.salesmanager.core.model.catalog.product.Product2AsetProduct(Lcom/salesmanager/core/model/catalog/product/Product;)ÏÈ
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÚ Ú(
+%48void"Wcom.salesmanager.core.model.catalog.product.image.ProductImage#setId(Ljava/lang/Long;)V*P
+N
+productImage>com.salesmanager.core.model.catalog.product.image.ProductImage*
+""2setId(Ljava/lang/Long;)Ÿ
+÷
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÙ Ù(X
+%49Qcom.salesmanager.core.business.services.catalog.product.image.ProductImageService"__id*d*bI
+Gcom.salesmanager.shop.admin.controller.products.ProductImagesController"
+productImageService¬ø
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaÙ Ù(0
+%50void"°com.salesmanager.core.business.services.catalog.product.image.ProductImageService#saveOrUpdate(Lcom/salesmanager/core/model/catalog/product/image/ProductImage;)V*Z
+X
+%49Qcom.salesmanager.core.business.services.catalog.product.image.ProductImageService*P
+N
+productImage>com.salesmanager.core.model.catalog.product.image.ProductImage2NsaveOrUpdate(Lcom/salesmanager/core/model/catalog/product/image/ProductImage;)”–
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaı ı(-#
+%51org.springframework.ui.Model"morg.springframework.ui.Model#addAttribute(Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/ui/Model;*'
+%
+modelorg.springframework.ui.Model*	
+product*@
+>
+product3com.salesmanager.core.model.catalog.product.Product22addAttribute(Ljava/lang/String;Ljava/lang/Object;)ûõ
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.javaˆ ˆ(/#
+%52org.springframework.ui.Model"morg.springframework.ui.Model#addAttribute(Ljava/lang/String;Ljava/lang/Object;)Lorg/springframework/ui/Model;*'
+%
+modelorg.springframework.ui.Model*	
+success*	
+success22addAttribute(Ljava/lang/String;Ljava/lang/Object;)∫
+∑
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java¯ ¯(A
+%53java.lang.String"__id*
+"""´
+ç
+Ä/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/ProductImagesController.java¯ ¯(B
+
+%53java.lang.String:N
+productImage>com.salesmanager.core.model.catalog.product.image.ProductImage:=
+bindingResult,org.springframework.validation.BindingResult:%
+modelorg.springframework.ui.Model:0
+request%javax.servlet.http.HttpServletRequest:
+localejava.util.LocaleBKI
+Gcom.salesmanager.shop.admin.controller.products.ProductImagesController

@@ -1,0 +1,403 @@
+
+ºcom.salesmanager.shop.store.security.AuthenticationTokenFilter#doFilterInternal(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;Ljavax/servlet/FilterChain;)VÅ
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java+ +(#"paramAnnotations*˜
+13Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaO O(∫∑
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaO O(
+%27java.lang.StringBuffer"Mjavax.servlet.http.HttpServletRequest#getRequestURL()Ljava/lang/StringBuffer;*2
+0
+request%javax.servlet.http.HttpServletRequest2getRequestURL()Çˇ
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaO O(*
+%28java.lang.String"3java.lang.StringBuffer#toString()Ljava/lang/String;*
+
+%27java.lang.StringBuffer2
+toString()°û
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaO O(F
+%29boolean"4java.lang.String#contains(Ljava/lang/CharSequence;)Z*
+
+%28java.lang.String*
+/api/v1/private2"contains(Ljava/lang/CharSequence;)*
+1
+12* 
+25Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java<# <(*˚
+¯
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java<5 <(E
+%13java.lang.String"__id*S*Q@
+>com.salesmanager.shop.store.security.AuthenticationTokenFilter"
+tokenHeaderÂ‚
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java<# <(F
+%14java.lang.String"Ujavax.servlet.http.HttpServletRequest#getHeader(Ljava/lang/String;)Ljava/lang/String;*2
+0
+request%javax.servlet.http.HttpServletRequest*
+
+%13java.lang.String2getHeader(Ljava/lang/String;)À
+»
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java< <(G!
+requestHeaderjava.lang.String"__id*
+
+%14java.lang.String*
+16
+19
+23*€
+26Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java3 3(°û
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java3 3(a
+
+%6void"Wjavax.servlet.http.HttpServletResponse#setHeader(Ljava/lang/String;Ljava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse* 
+Access-Control-Allow-Methods**(
+&POST, GET, PUT, OPTIONS, DELETE, PATCH2/setHeader(Ljava/lang/String;Ljava/lang/String;)íè
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java4 4(>
+
+%7void"Wjavax.servlet.http.HttpServletResponse#setHeader(Ljava/lang/String;Ljava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*
+Access-Control-Allow-Origin*
+
+originjava.lang.String2/setHeader(Ljava/lang/String;Ljava/lang/String;)§°
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java5 5(d
+
+%8void"Wjavax.servlet.http.HttpServletResponse#setHeader(Ljava/lang/String;Ljava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse* 
+Access-Control-Allow-Headers*-+
+)X-Auth-Token, Content-Type, Authorization2/setHeader(Ljava/lang/String;Ljava/lang/String;)ÉÄ
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java6 6(C
+
+%9void"Wjavax.servlet.http.HttpServletResponse#setHeader(Ljava/lang/String;Ljava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*$"
+ Access-Control-Allow-Credentials*
+true2/setHeader(Ljava/lang/String;Ljava/lang/String;)∫∑
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java: :(
+%10java.lang.StringBuffer"Mjavax.servlet.http.HttpServletRequest#getRequestURL()Ljava/lang/StringBuffer;*2
+0
+request%javax.servlet.http.HttpServletRequest2getRequestURL()Çˇ
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java: :(*
+%11java.lang.String"3java.lang.StringBuffer#toString()Ljava/lang/String;*
+
+%10java.lang.StringBuffer2
+toString()ûõ
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java: :(C
+%12boolean"4java.lang.String#contains(Ljava/lang/CharSequence;)Z*
+
+%11java.lang.String*
+/api/v1/auth2"contains(Ljava/lang/CharSequence;)*
+13
+25*˙
+16Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaG G(Æ
+´
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaG G(
+%23org.slf4j.Logger"__id*
+""∏µ
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaG G(W
+%24void"*org.slf4j.Logger#warn(Ljava/lang/String;)V*
+
+%23org.slf4j.Logger*A?
+=couldn't find any authorization token, will ignore the header2warn(Ljava/lang/String;)*
+13*¨
+27Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java0 0(’“
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java0 0(*
+%5java.lang.String"Ujavax.servlet.http.HttpServletRequest#getHeader(Ljava/lang/String;)Ljava/lang/String;*2
+0
+request%javax.servlet.http.HttpServletRequest*
+
+origin2getHeader(Ljava/lang/String;)√
+¿
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java0 0(*
+originjava.lang.String"__id*
+
+%5java.lang.String*
+26*∆
+17Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaE E(0Ã
+…
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaE E(0N
+%21Gcom.salesmanager.shop.store.security.common.CustomAuthenticationManager"__id*m*k@
+>com.salesmanager.shop.store.security.AuthenticationTokenFilter"'
+%facebookCustomerAuthenticationManagerÊ„
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaE E(W
+%22void"≠com.salesmanager.shop.store.security.common.CustomAuthenticationManager#authenticateRequest(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V*P
+N
+%21Gcom.salesmanager.shop.store.security.common.CustomAuthenticationManager*2
+0
+request%javax.servlet.http.HttpServletRequest*4
+2
+response&javax.servlet.http.HttpServletResponse2dauthenticateRequest(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)*
+13*√
+28Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java. .(∞
+≠
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java. .(
+originjava.lang.String"__id*
+*’“
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java/ /(8
+%0java.lang.String"Ujavax.servlet.http.HttpServletRequest#getHeader(Ljava/lang/String;)Ljava/lang/String;*2
+0
+request%javax.servlet.http.HttpServletRequest*
+
+origin2getHeader(Ljava/lang/String;)£
+†
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java/	 /(9
+%1boolean"Gorg.apache.commons.lang3.StringUtils#isBlank(Ljava/lang/CharSequence;)Z*("&
+$org.apache.commons.lang3.StringUtils*
+
+%0java.lang.String*
+26
+27*Ô
+19Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaC- C(:Æ
+´
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaCF C(T
+%19java.lang.String"__id*
+""©¶
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaC- C(U
+%20boolean"0java.lang.String#startsWith(Ljava/lang/String;)Z*#
+!
+requestHeaderjava.lang.String*
+
+%19java.lang.String2startsWith(Ljava/lang/String;)*
+16
+17*≤
+paramAnnotationsÅ
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java+# +(pÂ
+‚
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java* *(
+%2"
+__annotate*
+java.lang.Override*2
+0
+request%javax.servlet.http.HttpServletRequestœ
+Ã
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java+7 +(>0
+request%javax.servlet.http.HttpServletRequest"__annotation*
+
+%2Á
+‰
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java* *(
+%3"
+__annotate*
+java.lang.Override*4
+2
+response&javax.servlet.http.HttpServletResponse—
+Œ
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java+T +(\2
+response&javax.servlet.http.HttpServletResponse"__annotation*
+
+%3◊
+‘
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java* *(
+%4"
+__annotate*
+java.lang.Override*$
+"
+chainjavax.servlet.FilterChain¡
+æ
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java+j +(o"
+chainjavax.servlet.FilterChain"__annotation*
+
+%4*
+28*°
+0 "ô
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javai i(
+implicit return*‡
+1Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javah h(—Œ
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javah h()
+%45void"bjavax.servlet.FilterChain#doFilter(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V*$
+"
+chainjavax.servlet.FilterChain*2
+0
+request%javax.servlet.http.HttpServletRequest*4
+2
+response&javax.servlet.http.HttpServletResponse2GdoFilter(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)*
+0*î
+4Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java` `(Æ
+´
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java` `(
+%41org.slf4j.Logger"__id*
+""‘—
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java` `(s
+%42void"*org.slf4j.Logger#warn(Ljava/lang/String;)V*
+
+%41org.slf4j.Logger*][
+Ycouldn't find any authorization token, will ignore the header, might be a preflight check2warn(Ljava/lang/String;)*
+1*¬
+5Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java] ](. 
+«
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java] ](.N
+%39Gcom.salesmanager.shop.store.security.common.CustomAuthenticationManager"__id*k*i@
+>com.salesmanager.shop.store.security.AuthenticationTokenFilter"%
+#jwtCustomAdminAuthenticationManagerÊ„
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java] ](U
+%40void"≠com.salesmanager.shop.store.security.common.CustomAuthenticationManager#authenticateRequest(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V*P
+N
+%39Gcom.salesmanager.shop.store.security.common.CustomAuthenticationManager*2
+0
+request%javax.servlet.http.HttpServletRequest*4
+2
+response&javax.servlet.http.HttpServletResponse2dauthenticateRequest(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)*
+1*Ï
+7Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java[' [(4Æ
+´
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java[@ [(L
+%37java.lang.String"__id*
+""©¶
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java[' [(M
+%38boolean"0java.lang.String#startsWith(Ljava/lang/String;)Z*#
+!
+requestHeaderjava.lang.String*
+
+%37java.lang.String2startsWith(Ljava/lang/String;)*
+4
+5*√
+9Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaX# X(*˚
+¯
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaX5 X(E
+%35java.lang.String"__id*S*Q@
+>com.salesmanager.shop.store.security.AuthenticationTokenFilter"
+tokenHeaderÂ‚
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaX# X(F
+%36java.lang.String"Ujavax.servlet.http.HttpServletRequest#getHeader(Ljava/lang/String;)Ljava/lang/String;*2
+0
+request%javax.servlet.http.HttpServletRequest*
+
+%35java.lang.String2getHeader(Ljava/lang/String;)À
+»
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaX X(G!
+requestHeaderjava.lang.String"__id*
+
+%36java.lang.String*
+4
+7*«
+21Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaA A(1Õ
+ 
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaA A(1N
+%17Gcom.salesmanager.shop.store.security.common.CustomAuthenticationManager"__id*n*l@
+>com.salesmanager.shop.store.security.AuthenticationTokenFilter"(
+&jwtCustomCustomerAuthenticationManagerÊ„
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaA A(X
+%18void"≠com.salesmanager.shop.store.security.common.CustomAuthenticationManager#authenticateRequest(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V*P
+N
+%17Gcom.salesmanager.shop.store.security.common.CustomAuthenticationManager*2
+0
+request%javax.servlet.http.HttpServletRequest*4
+2
+response&javax.servlet.http.HttpServletResponse2dauthenticateRequest(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)*
+13*·
+10Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaU U(Æ
+´
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaU U(
+%32org.slf4j.Logger"__id*
+""äá
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaU U()
+%33java.lang.String"5java.util.Enumeration#nextElement()Ljava/lang/Object;*"
+ 
+headersjava.util.Enumeration2nextElement()íè
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaU U(*
+%34void"+org.slf4j.Logger#debug(Ljava/lang/String;)V*
+
+%32org.slf4j.Logger*
+
+%33java.lang.String2debug(Ljava/lang/String;)*
+11*å
+11Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaT T(¯ı
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaT T(%
+%31boolean"(java.util.Enumeration#hasMoreElements()Z*"
+ 
+headersjava.util.Enumeration2hasMoreElements()*
+9
+10*ù
+12Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaS$ S(+∫∑
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaS$ S(<
+%30java.util.Enumeration"Mjavax.servlet.http.HttpServletRequest#getHeaderNames()Ljava/util/Enumeration;*2
+0
+request%javax.servlet.http.HttpServletRequest2getHeaderNames()œ
+Ã
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.javaS S(= 
+headersjava.util.Enumeration"__id*
+
+%30java.util.Enumeration*
+11*Û
+23Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java?' ?(4Æ
+´
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java?@ ?(L
+%15java.lang.String"__id*
+""©¶
+Å
+w/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/security/AuthenticationTokenFilter.java?' ?(M
+%16boolean"0java.lang.String#startsWith(Ljava/lang/String;)Z*#
+!
+requestHeaderjava.lang.String*
+
+%15java.lang.String2startsWith(Ljava/lang/String;)*
+16
+19
+21:0
+request%javax.servlet.http.HttpServletRequest:2
+response&javax.servlet.http.HttpServletResponse:"
+chainjavax.servlet.FilterChainBB@
+>com.salesmanager.shop.store.security.AuthenticationTokenFilter

@@ -1,0 +1,382 @@
+
+Écom.salesmanager.shop.controller.FilesController#downloadProduct(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)[Bs
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaH H(,"paramAnnotations*â
+2s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaS S(ä
+á
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaS- S(]
+%27java.lang.String"__concat*
+attachment; filename=\"**
+(
+fileNameAndExtensionjava.lang.String¾
+»
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaS- S(d
+%28java.lang.String"__concat*
+
+%27java.lang.String*
+\"ùö
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaS S(e
+%29void"Wjavax.servlet.http.HttpServletResponse#setHeader(Ljava/lang/String;Ljava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*
+Content-Disposition*
+
+%28java.lang.String2/setHeader(Ljava/lang/String;Ljava/lang/String;)ÊÇ
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaT
+ T($
+%30java.io.ByteArrayOutputStream"^com.salesmanager.core.model.content.OutputContentFile#getFile()Ljava/io/ByteArrayOutputStream;*?
+=
+file5com.salesmanager.core.model.content.OutputContentFile2	getFile()íê
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaT
+ T(&
+%31$Array"-java.io.ByteArrayOutputStream#toByteArray()[B*&
+$
+%30java.io.ByteArrayOutputStream2toByteArray()"†
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaT T('
+
+%31$Array*—
+3s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaJ J(,Á
+¾
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaJ J(<9
+%03com.salesmanager.core.model.content.FileContentType"__id*
+""ü
+ù
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaJ J(=?
+fileType3com.salesmanager.core.model.content.FileContentType"__id*;
+9
+%03com.salesmanager.core.model.content.FileContentType°­
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaL$ L(1
+%1java.lang.StringBuilder"java.lang.StringBuilderÂ
+¿
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaL  L(3
+%2"!java.lang.StringBuilder#<init>()V*
+
+%1java.lang.StringBuilderÁ¾
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaL  L(D
+%3java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
+
+%1java.lang.StringBuilder*
+
+fileNamejava.lang.String2append(Ljava/lang/String;)¨¥
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaL  L(P
+%4java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
+
+%3java.lang.StringBuilder*
+.2append(Ljava/lang/String;)Â¿
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaL  L(b
+%5java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*
+
+%4java.lang.StringBuilder*
+
+	extensionjava.lang.String2append(Ljava/lang/String;)óð
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaL  L(m
+%6java.lang.String"4java.lang.StringBuilder#toString()Ljava/lang/String;*
+
+%5java.lang.StringBuilder2
+toString()Â
+¿
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaL L(n(
+fileNameAndExtensionjava.lang.String"__id*
+
+%6java.lang.StringŽ
+‹
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaO O()D
+%7>com.salesmanager.core.business.services.content.ContentService"__id*H*F2
+0com.salesmanager.shop.controller.FilesController"
+contentServiceÚ×
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaO O(c;
+%85com.salesmanager.core.model.content.OutputContentFile"ßcom.salesmanager.core.business.services.content.ContentService#getContentFile(Ljava/lang/String;Lcom/salesmanager/core/model/content/FileContentType;Ljava/lang/String;)Lcom/salesmanager/core/model/content/OutputContentFile;*F
+D
+%7>com.salesmanager.core.business.services.content.ContentService*
+
+	storeCodejava.lang.String*A
+?
+fileType3com.salesmanager.core.model.content.FileContentType**
+(
+fileNameAndExtensionjava.lang.String2igetContentFile(Ljava/lang/String;Lcom/salesmanager/core/model/content/FileContentType;Ljava/lang/String;)ü
+ù
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaO O(d=
+file5com.salesmanager.core.model.content.OutputContentFile"__id*=
+;
+%85com.salesmanager.core.model.content.OutputContentFile*
+2
+1*—+
+paramAnnotationst
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaH, H(×é
+æ
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaF F(%
+%9"
+__annotate*<:
+8org.springframework.security.access.prepost.PreAuthorize*
+
+	storeCodejava.lang.Stringè
+å
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaG G(M
+%10"
+__annotate*:8
+6org.springframework.web.bind.annotation.RequestMapping*
+
+	storeCodejava.lang.Stringæ
+ã
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaH H(
+%11"
+__annotate*86
+4org.springframework.web.bind.annotation.ResponseBody*
+
+	storeCodejava.lang.Stringæ
+ã
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaH- H(:
+%12"
+__annotate*86
+4org.springframework.web.bind.annotation.PathVariable*
+
+	storeCodejava.lang.StringÈ
+Å
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaHH H(Q
+	storeCodejava.lang.String"__annotation*
+
+%9*
+
+%10*
+
+%11*
+
+%12é
+æ
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaF F(%
+%13"
+__annotate*<:
+8org.springframework.security.access.prepost.PreAuthorize*
+
+fileNamejava.lang.Stringç
+ä
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaG G(M
+%14"
+__annotate*:8
+6org.springframework.web.bind.annotation.RequestMapping*
+
+fileNamejava.lang.Stringå
+â
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaH H(
+%15"
+__annotate*86
+4org.springframework.web.bind.annotation.ResponseBody*
+
+fileNamejava.lang.Stringå
+â
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaHS H(`
+%16"
+__annotate*86
+4org.springframework.web.bind.annotation.PathVariable*
+
+fileNamejava.lang.StringÈ
+Å
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaHn H(v
+fileNamejava.lang.String"__annotation*
+
+%13*
+
+%14*
+
+%15*
+
+%16ê
+ç
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaF F(%
+%17"
+__annotate*<:
+8org.springframework.security.access.prepost.PreAuthorize*
+
+	extensionjava.lang.Stringè
+å
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaG G(M
+%18"
+__annotate*:8
+6org.springframework.web.bind.annotation.RequestMapping*
+
+	extensionjava.lang.Stringæ
+ã
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaH H(
+%19"
+__annotate*86
+4org.springframework.web.bind.annotation.ResponseBody*
+
+	extensionjava.lang.Stringç
+ä
+t
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaHx H(…
+%20"
+__annotate*86
+4org.springframework.web.bind.annotation.PathVariable*
+
+	extensionjava.lang.StringË
+È
+u
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaH“ H(œ
+	extensionjava.lang.String"__annotation*
+
+%17*
+
+%18*
+
+%19*
+
+%20ý
+ú
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaF F(%
+%21"
+__annotate*<:
+8org.springframework.security.access.prepost.PreAuthorize*2
+0
+request%javax.servlet.http.HttpServletRequestû
+ø
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaG G(M
+%22"
+__annotate*:8
+6org.springframework.web.bind.annotation.RequestMapping*2
+0
+request%javax.servlet.http.HttpServletRequestù
+ö
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaH H(
+%23"
+__annotate*86
+4org.springframework.web.bind.annotation.ResponseBody*2
+0
+request%javax.servlet.http.HttpServletRequestÕ
+Ò
+u
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaH± H(¸0
+request%javax.servlet.http.HttpServletRequest"__annotation*
+
+%21*
+
+%22*
+
+%23ÿ
+ü
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaF F(%
+%24"
+__annotate*<:
+8org.springframework.security.access.prepost.PreAuthorize*4
+2
+response&javax.servlet.http.HttpServletResponseý
+ú
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaG G(M
+%25"
+__annotate*:8
+6org.springframework.web.bind.annotation.RequestMapping*4
+2
+response&javax.servlet.http.HttpServletResponseû
+ø
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaH H(
+%26"
+__annotate*86
+4org.springframework.web.bind.annotation.ResponseBody*4
+2
+response&javax.servlet.http.HttpServletResponse×
+Ô
+u
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaHÎ H(Ö2
+response&javax.servlet.http.HttpServletResponse"__annotation*
+
+%24*
+
+%25*
+
+%26*
+3*ö
+1s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaV V(	Ÿ
+œ
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaV V(	
+%32org.slf4j.Logger"__id*
+""Ð
+Í
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaV V(,
+%33java.lang.String"__concat*
+File not found *
+
+fileNamejava.lang.String½
+º
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaV V(2
+%34java.lang.String"__concat*
+
+%33java.lang.String*
+.×
+Ô
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaV V(>
+%35java.lang.String"__concat*
+
+%34java.lang.String*
+
+	extensionjava.lang.Stringƒ€
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaV V(?
+%36void"+org.slf4j.Logger#debug(Ljava/lang/String;)V*
+
+%32org.slf4j.Logger*
+
+%35java.lang.String2debug(Ljava/lang/String;)Ÿ
+œ
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaW W(3
+%37java.lang.String"__id*
+""ÅÂ
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaW W(4
+%38void"Fjavax.servlet.http.HttpServletResponse#sendError(ILjava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*2”*
+
+%37java.lang.String2sendError(ILjava/lang/String;)"}
+s
+i/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/controller/FilesController.javaX X(
+"":
+	storeCodejava.lang.String:
+fileNamejava.lang.String:
+	extensionjava.lang.String:0
+request%javax.servlet.http.HttpServletRequest:2
+response&javax.servlet.http.HttpServletResponseB42
+0com.salesmanager.shop.controller.FilesController

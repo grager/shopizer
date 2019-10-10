@@ -1,0 +1,453 @@
+
+‡com.salesmanager.shop.admin.controller.products.DigitalProductController#removeFile(JLjavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;Ljava/util/Locale;)Lorg/springframework/http/ResponseEntity;å
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.java|- |(7"paramAnnotations*»
+24å
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.java~' ~(.∏
+µ
+å
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.java~< ~(Q
+%0java.lang.String"__id*
+""ÎË
+å
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.java~' ~(R
+%1java.lang.Object"Ojavax.servlet.ServletRequest#getAttribute(Ljava/lang/String;)Ljava/lang/Object;*2
+0
+request%javax.servlet.http.HttpServletRequest*
+
+%0java.lang.String2 getAttribute(Ljava/lang/String;)Ô
+Ï
+å
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.java~ ~(S;
+store2com.salesmanager.core.model.merchant.MerchantStore"__id*
+
+%1java.lang.Objectäá
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaÄ Ä(&<
+%26com.salesmanager.core.business.utils.ajax.AjaxResponse"6com.salesmanager.core.business.utils.ajax.AjaxResponseú
+ô
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaÄ Ä((
+%3"@com.salesmanager.core.business.utils.ajax.AjaxResponse#<init>()V*>
+<
+%26com.salesmanager.core.business.utils.ajax.AjaxResponseö
+ó
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaÄ Ä()>
+resp6com.salesmanager.core.business.utils.ajax.AjaxResponse"__id*>
+<
+%26com.salesmanager.core.business.utils.ajax.AjaxResponseÊ„
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaÇ% Ç(0*
+%4$org.springframework.http.HttpHeaders"$org.springframework.http.HttpHeaders¯
+ı
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaÇ! Ç(2
+%5".org.springframework.http.HttpHeaders#<init>()V*,
+*
+%4$org.springframework.http.HttpHeaders˝
+˙
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaÇ Ç(33
+httpHeaders$org.springframework.http.HttpHeaders"__id*,
+*
+%4$org.springframework.http.HttpHeadersÃ
+…
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaÉ  É(?(
+%6"org.springframework.http.MediaType"__id*
+""ïí
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaÉ É(@
+
+%7void"Zorg.springframework.http.HttpHeaders#setContentType(Lorg/springframework/http/MediaType;)V*5
+3
+httpHeaders$org.springframework.http.HttpHeaders**
+(
+%6"org.springframework.http.MediaType24setContentType(Lorg/springframework/http/MediaType;)*
+23*„
+13é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaí6 í(;≈¬
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaí6 í(C
+%29java.lang.Integer"Mcom.salesmanager.core.model.merchant.MerchantStore#getId()Ljava/lang/Integer;*=
+;
+store2com.salesmanager.core.model.merchant.MerchantStore2getId()*
+12*Ö
+14é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaí í(3Á‰
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaí í(3
+
+%28int"java.lang.Integer#intValue()I*
+
+%27java.lang.Integer2
+intValue()*
+13*·
+15é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaí í((√¿
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaí í((
+%27java.lang.Integer"Mcom.salesmanager.core.model.merchant.MerchantStore#getId()Ljava/lang/Integer;*;
+9
+%262com.salesmanager.core.model.merchant.MerchantStore2getId()*
+14*⁄
+16é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaë ë(1ò
+ï
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaë ë(1>
+product3com.salesmanager.core.model.catalog.product.Product"__id*<
+:
+%253com.salesmanager.core.model.catalog.product.Product°û
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaí í( 9
+%262com.salesmanager.core.model.merchant.MerchantStore"zcom.salesmanager.core.model.catalog.product.Product#getMerchantStore()Lcom/salesmanager/core/model/merchant/MerchantStore;*@
+>
+product3com.salesmanager.core.model.catalog.product.Product2getMerchantStore()*
+15*’
+17é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaë ë(#∑¥
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaë ë(0:
+%253com.salesmanager.core.model.catalog.product.Product"Åcom.salesmanager.core.model.catalog.product.file.DigitalProduct#getProduct()Lcom/salesmanager/core/model/catalog/product/Product;*S
+Q
+digitalProduct?com.salesmanager.core.model.catalog.product.file.DigitalProduct2getProduct()*
+16*€
+18é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaé é(N"√
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaé é(N0
+.
+%23'org.springframework.http.ResponseEntity*¢
+
+19é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaç ç(.◊
+‘
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaç ç(. 
+returnStringjava.lang.String"__id*
+
+%21java.lang.StringŒ
+À
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaé? é(L*
+%22#org.springframework.http.HttpStatus"__id*
+""ÌÍ
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaé é(%.
+%23'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntityÈ
+Ê
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaé é(M
+%24"êorg.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/util/MultiValueMap;Lorg/springframework/http/HttpStatus;)V*0
+.
+%23'org.springframework.http.ResponseEntity*"
+ 
+returnStringjava.lang.String*5
+3
+httpHeaders$org.springframework.http.HttpHeaders*,
+*
+%22#org.springframework.http.HttpStatus*
+18*Ä
+paramAnnotationsç
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.java|7 |(•ñ
+ì
+å
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaz z(%
+%8"
+__annotate*<:
+8org.springframework.security.access.prepost.PreAuthorize*2
+0
+request%javax.servlet.http.HttpServletRequestî
+ë
+å
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.java{ {(f
+%9"
+__annotate*:8
+6org.springframework.web.bind.annotation.RequestMapping*2
+0
+request%javax.servlet.http.HttpServletRequestì
+ê
+å
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.java| |(
+%10"
+__annotate*86
+4org.springframework.web.bind.annotation.ResponseBody*2
+0
+request%javax.servlet.http.HttpServletRequestÎ
+Ë
+å
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.java|p |(w0
+request%javax.servlet.http.HttpServletRequest"__annotation*
+
+%8*
+
+%9*
+
+%10ô
+ñ
+å
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaz z(%
+%11"
+__annotate*<:
+8org.springframework.security.access.prepost.PreAuthorize*4
+2
+response&javax.servlet.http.HttpServletResponseó
+î
+å
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.java{ {(f
+%12"
+__annotate*:8
+6org.springframework.web.bind.annotation.RequestMapping*4
+2
+response&javax.servlet.http.HttpServletResponseï
+í
+å
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.java| |(
+%13"
+__annotate*86
+4org.springframework.web.bind.annotation.ResponseBody*4
+2
+response&javax.servlet.http.HttpServletResponseÒ
+Ó
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.java|ç |(ï2
+response&javax.servlet.http.HttpServletResponse"__annotation*
+
+%11*
+
+%12*
+
+%13Å
+˛
+å
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaz z(%
+%14"
+__annotate*<:
+8org.springframework.security.access.prepost.PreAuthorize*
+
+localejava.util.Localeˇ
+¸
+å
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.java{ {(f
+%15"
+__annotate*:8
+6org.springframework.web.bind.annotation.RequestMapping*
+
+localejava.util.Locale˝
+˙
+å
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.java| |(
+%16"
+__annotate*86
+4org.springframework.web.bind.annotation.ResponseBody*
+
+localejava.util.LocaleŸ
+÷
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.java|û |(§
+localejava.util.Locale"__annotation*
+
+%14*
+
+%15*
+
+%16*
+24*º
+1é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.java¢ ¢(ÿ’
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.java¢ ¢(+
+%46java.lang.String"Wcom.salesmanager.core.business.utils.ajax.AjaxResponse#toJSONString()Ljava/lang/String;*@
+>
+resp6com.salesmanager.core.business.utils.ajax.AjaxResponse2toJSONString()◊
+‘
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.java¢ ¢(, 
+returnStringjava.lang.String"__id*
+
+%46java.lang.StringŒ
+À
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.java£= £(J*
+%47#org.springframework.http.HttpStatus"__id*
+""ÌÍ
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.java£ £(#.
+%48'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntityÈ
+Ê
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.java£	 £(K
+%49"êorg.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/util/MultiValueMap;Lorg/springframework/http/HttpStatus;)V*0
+.
+%48'org.springframework.http.ResponseEntity*"
+ 
+returnStringjava.lang.String*5
+3
+httpHeaders$org.springframework.http.HttpHeaders*,
+*
+%47#org.springframework.http.HttpStatus"√
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.java£ £(L0
+.
+%48'org.springframework.http.ResponseEntity*í
+5é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaô ô(Æ
+´
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaô ô(;
+
+%39int"__id*
+""≈¬
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaô ô(<
+%40void"Dcom.salesmanager.core.business.utils.ajax.AjaxResponse#setStatus(I)V*@
+>
+resp6com.salesmanager.core.business.utils.ajax.AjaxResponse*
+
+
+%39int2setStatus(I)*
+1*ß
+6é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaò ò(ﬁ
+€
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaò ò(Y
+%37Rcom.salesmanager.core.business.services.catalog.product.file.DigitalProductService"__id*g*eJ
+Hcom.salesmanager.shop.admin.controller.products.DigitalProductController"
+digitalProductService™ß
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaò ò(/
+%38void"ícom.salesmanager.core.business.services.common.generic.SalesManagerEntityService#delete(Lcom/salesmanager/core/model/generic/SalesManagerEntity;)V*[
+Y
+%37Rcom.salesmanager.core.business.services.catalog.product.file.DigitalProductService*S
+Q
+digitalProduct?com.salesmanager.core.model.catalog.product.file.DigitalProduct2@delete(Lcom/salesmanager/core/model/generic/SalesManagerEntity;)*
+5*⁄
+7é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaï ï(N"√
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaï ï(N0
+.
+%35'org.springframework.http.ResponseEntity*†
+
+8é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaî î(.◊
+‘
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaî î(. 
+returnStringjava.lang.String"__id*
+
+%33java.lang.StringŒ
+À
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaï? ï(L*
+%34#org.springframework.http.HttpStatus"__id*
+""ÌÍ
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaï ï(%.
+%35'org.springframework.http.ResponseEntity"'org.springframework.http.ResponseEntityÈ
+Ê
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaï ï(M
+%36"êorg.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/util/MultiValueMap;Lorg/springframework/http/HttpStatus;)V*0
+.
+%35'org.springframework.http.ResponseEntity*"
+ 
+returnStringjava.lang.String*5
+3
+httpHeaders$org.springframework.http.HttpHeaders*,
+*
+%34#org.springframework.http.HttpStatus*
+7*Ù
+9é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaî î(ÿ’
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaî î(-
+%33java.lang.String"Wcom.salesmanager.core.business.utils.ajax.AjaxResponse#toJSONString()Ljava/lang/String;*@
+>
+resp6com.salesmanager.core.business.utils.ajax.AjaxResponse2toJSONString()*
+8*ˆ
+20é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaç ç(ÿ’
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaç ç(-
+%21java.lang.String"Wcom.salesmanager.core.business.utils.ajax.AjaxResponse#toJSONString()Ljava/lang/String;*@
+>
+resp6com.salesmanager.core.business.utils.ajax.AjaxResponse2toJSONString()*
+19*î
+21é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaå å(Æ
+´
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaå å(6
+
+%19int"__id*
+""≈¬
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaå å(7
+%20void"Dcom.salesmanager.core.business.utils.ajax.AjaxResponse#setStatus(I)V*@
+>
+resp6com.salesmanager.core.business.utils.ajax.AjaxResponse*
+
+
+%19int2setStatus(I)*
+20*ì
+10é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaì ì(Æ
+´
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaì ì(6
+
+%31int"__id*
+""≈¬
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaì ì(7
+%32void"Dcom.salesmanager.core.business.utils.ajax.AjaxResponse#setStatus(I)V*@
+>
+resp6com.salesmanager.core.business.utils.ajax.AjaxResponse*
+
+
+%31int2setStatus(I)*
+9*Ÿ
+22é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaà à(I∑
+¥
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaà à(IQ
+digitalProduct?com.salesmanager.core.model.catalog.product.file.DigitalProduct"__id*H
+F
+%18?com.salesmanager.core.model.catalog.product.file.DigitalProduct*
+17
+21*å
+23é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaà# à(8ﬁ
+€
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaà# à(8Y
+%17Rcom.salesmanager.core.business.services.catalog.product.file.DigitalProductService"__id*g*eJ
+Hcom.salesmanager.shop.admin.controller.products.DigitalProductController"
+digitalProductServiceçä
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaà# à(HF
+%18?com.salesmanager.core.model.catalog.product.file.DigitalProduct"®com.salesmanager.core.business.services.common.generic.SalesManagerEntityService#getById(Ljava/io/Serializable;)Lcom/salesmanager/core/model/generic/SalesManagerEntity;*[
+Y
+%17Rcom.salesmanager.core.business.services.catalog.product.file.DigitalProductService*
+""2getById(Ljava/io/Serializable;)*
+22*à
+12é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaí6 í(NÁ‰
+é
+Å/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/admin/controller/products/DigitalProductController.javaí6 í(N
+
+%30int"java.lang.Integer#intValue()I*
+
+%29java.lang.Integer2
+intValue()*
+6
+10:
+"":0
+request%javax.servlet.http.HttpServletRequest:2
+response&javax.servlet.http.HttpServletResponse:
+localejava.util.LocaleBLJ
+Hcom.salesmanager.shop.admin.controller.products.DigitalProductController

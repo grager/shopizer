@@ -1,0 +1,285 @@
+
+écom.salesmanager.shop.store.api.v1.product.ManufacturerApi#delete(Ljava/lang/Long;Lcom/salesmanager/core/model/merchant/MerchantStore;Lcom/salesmanager/core/model/reference/language/Language;Ljavax/servlet/http/HttpServletResponse;)V
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.java½ ½("paramAnnotations*Ä
+6
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.javaÉ É(ä
+á
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.javaÉ  É(F
+%23java.lang.String"__concat*#!
+No Manufacturer found for ID : *
+
+idjava.lang.LongÑÎ
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.javaÉ É(G
+%24void"Fjavax.servlet.http.HttpServletResponse#sendError(ILjava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*2”*
+
+%23java.lang.String2sendError(ILjava/lang/String;)*
+0*Ù
+
+7
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.javaÇ Ç(©
+¦
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.javaÇ Ç(J
+%21Ccom.salesmanager.shop.store.controller.product.facade.ProductFacade"__id*Q*O<
+:com.salesmanager.shop.store.api.v1.product.ManufacturerApi"
+productFacade¡ž
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.javaÇ Ç(O
+%22void"com.salesmanager.shop.store.controller.product.facade.ProductFacade#deleteManufacturer(Lcom/salesmanager/core/model/catalog/product/manufacturer/Manufacturer;Lcom/salesmanager/core/model/merchant/MerchantStore;Lcom/salesmanager/core/model/reference/language/Language;)V*L
+J
+%21Ccom.salesmanager.shop.store.controller.product.facade.ProductFacade*W
+U
+manufacturerEcom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer*E
+C
+merchantStore2com.salesmanager.core.model.merchant.MerchantStore*E
+C
+language7com.salesmanager.core.model.reference.language.Language2ÈdeleteManufacturer(Lcom/salesmanager/core/model/catalog/product/manufacturer/Manufacturer;Lcom/salesmanager/core/model/merchant/MerchantStore;Lcom/salesmanager/core/model/reference/language/Language;)*
+0*À
+8
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.javaÄ Ä(B±
+®
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.javaÄ Ä(BU
+manufacturerEcom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer"__id*N
+L
+%20Ecom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer*
+6
+7*ì
+9
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.javaÄ" Ä(5Ä
+Á
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.javaÄ" Ä(5_
+%19Xcom.salesmanager.core.business.services.catalog.product.manufacturer.ManufacturerService"__id*W*U<
+:com.salesmanager.shop.store.api.v1.product.ManufacturerApi"
+manufacturerService™–
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.javaÄ" Ä(AL
+%20Ecom.salesmanager.core.model.catalog.product.manufacturer.Manufacturer"¨com.salesmanager.core.business.services.common.generic.SalesManagerEntityService#getById(Ljava/io/Serializable;)Lcom/salesmanager/core/model/generic/SalesManagerEntity;*a
+_
+%19Xcom.salesmanager.core.business.services.catalog.product.manufacturer.ManufacturerService*
+
+idjava.lang.Long2getById(Ljava/io/Serializable;)*
+8*û/
+paramAnnotations
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.java½ Á(#ê
+ç
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.java¶ ¶(N
+%0"
+__annotate*:8
+6org.springframework.web.bind.annotation.RequestMapping*
+
+idjava.lang.Longê
+ç
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.java· ·( 
+%1"
+__annotate*:8
+6org.springframework.web.bind.annotation.ResponseStatus*
+
+idjava.lang.Longè
+å
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.java¸ ¸(
+%2"
+__annotate*86
+4org.springframework.web.bind.annotation.ResponseBody*
+
+idjava.lang.LongÜ
+Ù
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.java¹ ¼(
+%3"
+__annotate*,*
+(io.swagger.annotations.ApiImplicitParams*
+
+idjava.lang.Longè
+å
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.java¾ ¾(
+%4"
+__annotate*86
+4org.springframework.web.bind.annotation.PathVariable*
+
+idjava.lang.LongÐ
+Í
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.java¾ ¾(
+idjava.lang.Long"__annotation*
+
+%0*
+
+%1*
+
+%2*
+
+%3*
+
+%4™
+–
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.java¶ ¶(N
+%5"
+__annotate*:8
+6org.springframework.web.bind.annotation.RequestMapping*E
+C
+merchantStore2com.salesmanager.core.model.merchant.MerchantStore™
+–
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.java· ·( 
+%6"
+__annotate*:8
+6org.springframework.web.bind.annotation.ResponseStatus*E
+C
+merchantStore2com.salesmanager.core.model.merchant.MerchantStore—
+”
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.java¸ ¸(
+%7"
+__annotate*86
+4org.springframework.web.bind.annotation.ResponseBody*E
+C
+merchantStore2com.salesmanager.core.model.merchant.MerchantStore‹
+ˆ
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.java¹ ¼(
+%8"
+__annotate*,*
+(io.swagger.annotations.ApiImplicitParams*E
+C
+merchantStore2com.salesmanager.core.model.merchant.MerchantStore
+
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.java¿ ¿(
+%9"
+__annotate*1/
+-springfox.documentation.annotations.ApiIgnore*E
+C
+merchantStore2com.salesmanager.core.model.merchant.MerchantStoreÿ
+ü
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.java¿ ¿(,C
+merchantStore2com.salesmanager.core.model.merchant.MerchantStore"__annotation*
+
+%5*
+
+%6*
+
+%7*
+
+%8*
+
+%9š
+—
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.java¶ ¶(N
+%10"
+__annotate*:8
+6org.springframework.web.bind.annotation.RequestMapping*E
+C
+language7com.salesmanager.core.model.reference.language.Languageš
+—
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.java· ·( 
+%11"
+__annotate*:8
+6org.springframework.web.bind.annotation.ResponseStatus*E
+C
+language7com.salesmanager.core.model.reference.language.Language˜
+•
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.java¸ ¸(
+%12"
+__annotate*86
+4org.springframework.web.bind.annotation.ResponseBody*E
+C
+language7com.salesmanager.core.model.reference.language.LanguageŒ
+‰
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.java¹ ¼(
+%13"
+__annotate*,*
+(io.swagger.annotations.ApiImplicitParams*E
+C
+language7com.salesmanager.core.model.reference.language.Language‘
+Ž
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.javaÀ À(
+%14"
+__annotate*1/
+-springfox.documentation.annotations.ApiIgnore*E
+C
+language7com.salesmanager.core.model.reference.language.Language„
+
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.javaÀ À("C
+language7com.salesmanager.core.model.reference.language.Language"__annotation*
+
+%10*
+
+%11*
+
+%12*
+
+%13*
+
+%14‰
+†
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.java¶ ¶(N
+%15"
+__annotate*:8
+6org.springframework.web.bind.annotation.RequestMapping*4
+2
+response&javax.servlet.http.HttpServletResponse‰
+†
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.java· ·( 
+%16"
+__annotate*:8
+6org.springframework.web.bind.annotation.ResponseStatus*4
+2
+response&javax.servlet.http.HttpServletResponse‡
+„
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.java¸ ¸(
+%17"
+__annotate*86
+4org.springframework.web.bind.annotation.ResponseBody*4
+2
+response&javax.servlet.http.HttpServletResponseû
+ø
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.java¹ ¼(
+%18"
+__annotate*,*
+(io.swagger.annotations.ApiImplicitParams*4
+2
+response&javax.servlet.http.HttpServletResponseê
+ç
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.javaÁ Á("2
+response&javax.servlet.http.HttpServletResponse"__annotation*
+
+%15*
+
+%16*
+
+%17*
+
+%18*
+9*ž
+0 "–
+
+s/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v1/product/ManufacturerApi.javaÔ Ô(
+implicit return:
+idjava.lang.Long:C
+merchantStore2com.salesmanager.core.model.merchant.MerchantStore:C
+language7com.salesmanager.core.model.reference.language.Language:2
+response&javax.servlet.http.HttpServletResponseB><
+:com.salesmanager.shop.store.api.v1.product.ManufacturerApi

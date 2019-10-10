@@ -1,0 +1,294 @@
+
+Ùcom.salesmanager.shop.store.api.v0.product.ShopProductRESTController#getProducts(Ljava/lang/String;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lcom/salesmanager/shop/model/catalog/product/ReadableProductList;â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaâ â('"paramAnnotations*á
+2â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.java•
+ •(∂
+≥
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.java• •(-
+%23java.lang.String"__id*
+""ÍÁ
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.java•
+ •(.
+%24java.lang.String"Ojavax.servlet.ServletRequest#getParameter(Ljava/lang/String;)Ljava/lang/String;*2
+0
+request%javax.servlet.http.HttpServletRequest*
+
+%23java.lang.String2 getParameter(Ljava/lang/String;) 
+«
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.java• •(.
+langjava.lang.String"__id*
+
+%24java.lang.String*
+1*œ
+3â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaü ü(Ø¨
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaü ü(1>
+%187com.salesmanager.core.model.reference.language.Language"Äcom.salesmanager.core.model.merchant.MerchantStore#getDefaultLanguage()Lcom/salesmanager/core/model/reference/language/Language;*E
+C
+merchantStore2com.salesmanager.core.model.merchant.MerchantStore2getDefaultLanguage()ï
+í
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaü ü(2<
+l7com.salesmanager.core.model.reference.language.Language"__id*@
+>
+%187com.salesmanager.core.model.reference.language.Language»≈
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.java° °(
+%19java.lang.String"Scom.salesmanager.core.model.reference.language.Language#getCode()Ljava/lang/String;*>
+<
+l7com.salesmanager.core.model.reference.language.Language2	getCode() 
+«
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.java° °(
+langjava.lang.String"__id*
+
+%19java.lang.String∂
+≥
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.java£/ £(=
+%20java.lang.String"__id*
+""ÍÁ
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.java£ £(>
+%21java.lang.String"Ojavax.servlet.ServletRequest#getParameter(Ljava/lang/String;)Ljava/lang/String;*2
+0
+request%javax.servlet.http.HttpServletRequest*
+
+%20java.lang.String2 getParameter(Ljava/lang/String;)≠
+™
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.java£ £(?
+%22boolean"Gorg.apache.commons.lang3.StringUtils#isBlank(Ljava/lang/CharSequence;)Z*("&
+$org.apache.commons.lang3.StringUtils*
+
+%21java.lang.String*
+2
+1*À
+4â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaö ö(	∂
+≥
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaö ö(	
+%13org.slf4j.Logger"__id*
+""ı
+Ú
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaö ö(:
+%14java.lang.String"__concat*$"
+ Merchant store is null for code *
+
+storejava.lang.Stringöó
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaö ö(;
+%15void"+org.slf4j.Logger#error(Ljava/lang/String;)V*
+
+%13org.slf4j.Logger*
+
+%14java.lang.String2error(Ljava/lang/String;)ı
+Ú
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaõ õ(E
+%16java.lang.String"__concat*$"
+ Merchant store is null for code *
+
+storejava.lang.String‹Ÿ
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaõ õ(F
+%17void"Fjavax.servlet.http.HttpServletResponse#sendError(ILjava/lang/String;)V*4
+2
+response&javax.servlet.http.HttpServletResponse*2˜*
+
+%16java.lang.String2sendError(ILjava/lang/String;)"î
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaú ú(
+""*Ó	
+6â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javañ ñ('«
+ƒ
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javañ ñ('L
+%11Ecom.salesmanager.core.business.services.merchant.MerchantStoreService"__id*b*`F
+Dcom.salesmanager.shop.store.api.v0.product.ShopProductRESTController"
+merchantStoreServiceÌ
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javañ ñ(89
+%122com.salesmanager.core.model.merchant.MerchantStore"ócom.salesmanager.core.business.services.merchant.MerchantStoreService#getByCode(Ljava/lang/String;)Lcom/salesmanager/core/model/merchant/MerchantStore;*N
+L
+%11Ecom.salesmanager.core.business.services.merchant.MerchantStoreService*
+
+storejava.lang.String2getByCode(Ljava/lang/String;)ó
+î
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javañ ñ(8C
+merchantStore2com.salesmanager.core.model.merchant.MerchantStore"__id*;
+9
+%122com.salesmanager.core.model.merchant.MerchantStore*
+3
+4*ˇ
+8â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaë ë(‚
+ﬂ
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaë ë(C
+merchantStore2com.salesmanager.core.model.merchant.MerchantStore"__id*
+""*	
+3
+4
+6*å
+9â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaê ê(…∆
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaê ê(
+%9java.lang.String"Ncom.salesmanager.core.model.merchant.MerchantStore#getCode()Ljava/lang/String;*E
+C
+merchantStore2com.salesmanager.core.model.merchant.MerchantStore2	getCode()†ù
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaê ê(,
+%10boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+
+%9java.lang.String*
+
+storejava.lang.String2equals(Ljava/lang/Object;)*
+3
+4
+6
+8*Ä
+paramAnnotationsâ
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaâ' â(}˙
+˜
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaá á(,
+%2"
+__annotate*:8
+6org.springframework.web.bind.annotation.RequestMapping*
+
+storejava.lang.String¯
+ı
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaà à(
+%3"
+__annotate*86
+4org.springframework.web.bind.annotation.ResponseBody*
+
+storejava.lang.String¯
+ı
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaâ( â(5
+%4"
+__annotate*86
+4org.springframework.web.bind.annotation.PathVariable*
+
+storejava.lang.String–
+Õ
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaâ= â(B
+storejava.lang.String"__annotation*
+
+%2*
+
+%3*
+
+%4ë
+é
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaá á(,
+%5"
+__annotate*:8
+6org.springframework.web.bind.annotation.RequestMapping*2
+0
+request%javax.servlet.http.HttpServletRequestè
+å
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaà à(
+%6"
+__annotate*86
+4org.springframework.web.bind.annotation.ResponseBody*2
+0
+request%javax.servlet.http.HttpServletRequestﬂ
+‹
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaâW â(^0
+request%javax.servlet.http.HttpServletRequest"__annotation*
+
+%5*
+
+%6ì
+ê
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaá á(,
+%7"
+__annotate*:8
+6org.springframework.web.bind.annotation.RequestMapping*4
+2
+response&javax.servlet.http.HttpServletResponseë
+é
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaà à(
+%8"
+__annotate*86
+4org.springframework.web.bind.annotation.ResponseBody*4
+2
+response&javax.servlet.http.HttpServletResponse·
+ﬁ
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaât â(|2
+response&javax.servlet.http.HttpServletResponse"__annotation*
+
+%7*
+
+%8*
+10*∏
+10â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaé/ é(6µ
+≤
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaéD é(\
+%0java.lang.String"__id*
+""ËÂ
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaé/ é(]
+%1java.lang.Object"Ojavax.servlet.ServletRequest#getAttribute(Ljava/lang/String;)Ljava/lang/Object;*2
+0
+request%javax.servlet.http.HttpServletRequest*
+
+%0java.lang.String2 getAttribute(Ljava/lang/String;)Ù
+Ò
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaé é(^C
+merchantStore2com.salesmanager.core.model.merchant.MerchantStore"__id*
+
+%1java.lang.Object*
+3
+4
+6
+9*˜
+1â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaØ	 Ø(å
+â
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaØ	 Ø(OF
+%25?com.salesmanager.shop.model.catalog.product.ReadableProductList"™com.salesmanager.shop.store.api.v0.product.ShopProductRESTController#getProducts(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)Lcom/salesmanager/shop/model/catalog/product/ReadableProductList;*HF
+Dcom.salesmanager.shop.store.api.v0.product.ShopProductRESTController*2 *2êN*
+
+storejava.lang.String*
+
+langjava.lang.String*
+""*
+""*2
+0
+request%javax.servlet.http.HttpServletRequest*4
+2
+response&javax.servlet.http.HttpServletResponse"÷
+â
+}/Users/grager/github/shopizer/sm-shop/src/main/java/com/salesmanager/shop/store/api/v0/product/ShopProductRESTController.javaØ Ø(PH
+F
+%25?com.salesmanager.shop.model.catalog.product.ReadableProductList:
+storejava.lang.String:0
+request%javax.servlet.http.HttpServletRequest:2
+response&javax.servlet.http.HttpServletResponseBHF
+Dcom.salesmanager.shop.store.api.v0.product.ShopProductRESTController

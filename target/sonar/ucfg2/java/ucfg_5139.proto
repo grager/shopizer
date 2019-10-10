@@ -1,0 +1,641 @@
+
+¬com.salesmanager.core.business.modules.integration.shipping.impl.DefaultPackagingImpl#getItemPackagesDetails(Ljava/util/List;Lcom/salesmanager/core/model/merchant/MerchantStore;)Ljava/util/List;õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaπ π(3"paramAnnotations*˙
+13õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java„ „(Ã…
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java„ „($
+
+%27int"Ccom.salesmanager.core.model.shipping.ShippingProduct#getQuantity()I*I
+G
+shippingProduct4com.salesmanager.core.model.shipping.ShippingProduct2getQuantity()*
+9
+12*¿
+24õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java— —($»
+≈
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java— —($
+%14java.lang.Double"__id*
+""‘—
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java— —(
+%15java.math.BigDecimal"java.math.BigDecimalÉ
+Ä
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java— —(%
+%16"java.math.BigDecimal#<init>(D)V*
+
+%15java.math.BigDecimal*
+
+%14java.lang.Double·
+ﬁ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java— —(%
+hjava.math.BigDecimal"__id*
+
+%15java.math.BigDecimal*
+13
+18
+20
+22*≥
+14õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java⁄ ⁄("Ñ
+Å
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java⁄ ⁄("S
+	attributeFcom.salesmanager.core.model.catalog.product.attribute.ProductAttribute"__id*
+""*
+13
+16*ù	
+15õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java‹
+ ‹(¨©
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java‹ ‹(5
+%25java.math.BigDecimal"xcom.salesmanager.core.model.catalog.product.attribute.ProductAttribute#getProductAttributeWeight()Ljava/math/BigDecimal;*U
+S
+	attributeFcom.salesmanager.core.model.catalog.product.attribute.ProductAttribute2getProductAttributeWeight()ﬂ‹
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java‹
+ ‹(6
+%26java.math.BigDecimal"Fjava.math.BigDecimal#add(Ljava/math/BigDecimal;)Ljava/math/BigDecimal;*
+
+wjava.math.BigDecimal*
+
+%25java.math.BigDecimal2add(Ljava/math/BigDecimal;)·
+ﬁ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java‹ ‹(6
+wjava.math.BigDecimal"__id*
+
+%26java.math.BigDecimal*
+14*ƒ
+26õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaŒ Œ($»
+≈
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaŒ Œ($
+%11java.lang.Double"__id*
+""‘—
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaŒ Œ(
+%12java.math.BigDecimal"java.math.BigDecimalÉ
+Ä
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaŒ Œ(%
+%13"java.math.BigDecimal#<init>(D)V*
+
+%12java.math.BigDecimal*
+
+%11java.lang.Double·
+ﬁ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaŒ Œ(%
+wjava.math.BigDecimal"__id*
+
+%12java.math.BigDecimal*
+24
+13
+18
+20
+22*Ÿ
+16õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java€ €(™ß
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java€ €(0
+%24java.lang.String"wcom.salesmanager.core.model.catalog.product.attribute.ProductAttribute#getAttributeAdditionalWeight()Ljava/lang/String;*U
+S
+	attributeFcom.salesmanager.core.model.catalog.product.attribute.ProductAttribute2getAttributeAdditionalWeight()*
+14
+15*◊
+27õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java«& «(-›⁄
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java«& «(=
+%6java.util.Set"Rcom.salesmanager.core.model.catalog.product.Product#getAttributes()Ljava/util/Set;*@
+>
+product3com.salesmanager.core.model.catalog.product.Product2getAttributes()€
+ÿ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java« «(>
+
+attributesjava.util.Set"__id*
+
+%6java.util.SetÒÓ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java… …(,
+%7java.math.BigDecimal"\com.salesmanager.core.model.catalog.product.Product#getProductWeight()Ljava/math/BigDecimal;*@
+>
+product3com.salesmanager.core.model.catalog.product.Product2getProductWeight()‡
+›
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java… …(-
+wjava.math.BigDecimal"__id*
+
+%7java.math.BigDecimalÒÓ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java   (,
+%8java.math.BigDecimal"\com.salesmanager.core.model.catalog.product.Product#getProductHeight()Ljava/math/BigDecimal;*@
+>
+product3com.salesmanager.core.model.catalog.product.Product2getProductHeight()‡
+›
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java   (-
+hjava.math.BigDecimal"__id*
+
+%8java.math.BigDecimalÒÓ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÀ À(,
+%9java.math.BigDecimal"\com.salesmanager.core.model.catalog.product.Product#getProductLength()Ljava/math/BigDecimal;*@
+>
+product3com.salesmanager.core.model.catalog.product.Product2getProductLength()‡
+›
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÀ À(-
+ljava.math.BigDecimal"__id*
+
+%9java.math.BigDecimalÌ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÃ Ã(,
+%10java.math.BigDecimal"[com.salesmanager.core.model.catalog.product.Product#getProductWidth()Ljava/math/BigDecimal;*@
+>
+product3com.salesmanager.core.model.catalog.product.Product2getProductWidth()‚
+ﬂ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÃ Ã(-
+wdjava.math.BigDecimal"__id*
+
+%10java.math.BigDecimal*
+24
+13
+26
+18
+20
+22*ö
+18õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaŸ Ÿ('ÎË
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaŸ Ÿ(.
+
+%23int"java.util.Set#size()I*
+
+
+attributesjava.util.Set2size()*
+13
+14*‘	
+29õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java¿ ¿($≠™
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java¿ ¿(19
+%43com.salesmanager.core.model.catalog.product.Product"vcom.salesmanager.core.model.shipping.ShippingProduct#getProduct()Lcom/salesmanager/core/model/catalog/product/Product;*I
+G
+shippingProduct4com.salesmanager.core.model.shipping.ShippingProduct2getProduct()§
+°
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java¿ ¿(2>
+product3com.salesmanager.core.model.catalog.product.Product"__id*;
+9
+%43com.salesmanager.core.model.catalog.product.ProductœÃ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java¬ ¬(!
+%5boolean"Gcom.salesmanager.core.model.catalog.product.Product#isProductVirtual()Z*@
+>
+product3com.salesmanager.core.model.catalog.product.Product2isProductVirtual()*
+2
+27*¸
+paramAnnotationsõ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaπ3 ∫(7È
+Ê
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java∏ ∏(
+
+%2"
+__annotate*
+java.lang.Override*
+
+productsjava.util.List”
+–
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java∫ ∫(!
+productsjava.util.List"__annotation*
+
+%2ä
+á
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java∏ ∏(
+
+%3"
+__annotate*
+java.lang.Override*=
+;
+store2com.salesmanager.core.model.merchant.MerchantStoreÙ
+Ò
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java∫1 ∫(6;
+store2com.salesmanager.core.model.merchant.MerchantStore"__annotation*
+
+%3*
+31*‡
+1õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaã	 ã("º
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaã ã(
+
+packagesjava.util.List*•
+2õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaø ø(%¯
+ı
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaø ø(%G
+shippingProduct4com.salesmanager.core.model.shipping.ShippingProduct"__id*
+""*
+29
+1*’
+4õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÑ Ñ(âÜ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÑ Ñ($
+%68void"Tcom.salesmanager.core.model.shipping.PackageDetails#setItemName(Ljava/lang/String;)V*?
+=
+detail3com.salesmanager.core.model.shipping.PackageDetails*!
+
+descriptionjava.lang.String2setItemName(Ljava/lang/String;)†
+ù
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÜ Ü(
+%69boolean"
+__arrayAdd*
+
+packagesjava.util.List*: *?
+=
+detail3com.salesmanager.core.model.shipping.PackageDetails*
+7*¿
+5õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÇ Ç(‚ﬂ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÇ Ç(-
+%64java.util.Set"Tcom.salesmanager.core.model.catalog.product.Product#getDescriptions()Ljava/util/Set;*@
+>
+product3com.salesmanager.core.model.catalog.product.Product2getDescriptions()éã
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÇ Ç(8
+%65java.util.Iterator",java.util.Set#iterator()Ljava/util/Iterator;*
+
+%64java.util.Set2
+iterator()∆√
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÇ Ç(?Q
+%66Jcom.salesmanager.core.model.catalog.product.description.ProductDescription"+java.util.Iterator#next()Ljava/lang/Object;*
+
+%65java.util.Iterator2next()ÚÔ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÇ Ç(I
+%67java.lang.String"Vcom.salesmanager.core.model.common.description.Description#getName()Ljava/lang/String;*S
+Q
+%66Jcom.salesmanager.core.model.catalog.product.description.ProductDescription2	getName()„
+‡
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÇ Ç(I
+descriptionjava.lang.String"__id*
+
+%67java.lang.String*
+4*Å'
+6õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java˜ ˜(1íè
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java˜! ˜(/:
+%503com.salesmanager.core.model.shipping.PackageDetails"3com.salesmanager.core.model.shipping.PackageDetails•
+¢
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java˜ ˜(1
+%51"=com.salesmanager.core.model.shipping.PackageDetails#<init>()V*<
+:
+%503com.salesmanager.core.model.shipping.PackageDetails§
+°
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java˜ ˜(2=
+detail3com.salesmanager.core.model.shipping.PackageDetails"__id*<
+:
+%503com.salesmanager.core.model.shipping.PackageDetailsÅ˛
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java¯ ˘(
+%52double"#java.math.BigDecimal#doubleValue()D*
+
+hjava.math.BigDecimal2doubleValue()·ﬁ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java¯ ˘(
+%53void"Icom.salesmanager.core.model.shipping.PackageDetails#setShippingHeight(D)V*?
+=
+detail3com.salesmanager.core.model.shipping.PackageDetails*
+
+%52double2setShippingHeight(D)Å˛
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java˙ ˚(
+%54double"#java.math.BigDecimal#doubleValue()D*
+
+ljava.math.BigDecimal2doubleValue()·ﬁ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java˙ ˚(
+%55void"Icom.salesmanager.core.model.shipping.PackageDetails#setShippingLength(D)V*?
+=
+detail3com.salesmanager.core.model.shipping.PackageDetails*
+
+%54double2setShippingLength(D)Å˛
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java¸ ¸(-
+%56double"#java.math.BigDecimal#doubleValue()D*
+
+wjava.math.BigDecimal2doubleValue()·ﬁ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java¸ ¸(.
+%57void"Icom.salesmanager.core.model.shipping.PackageDetails#setShippingWeight(D)V*?
+=
+detail3com.salesmanager.core.model.shipping.PackageDetails*
+
+%56double2setShippingWeight(D)Çˇ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java˝ ˛(
+%58double"#java.math.BigDecimal#doubleValue()D*
+
+wdjava.math.BigDecimal2doubleValue()ﬂ‹
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java˝ ˛(
+%59void"Hcom.salesmanager.core.model.shipping.PackageDetails#setShippingWidth(D)V*?
+=
+detail3com.salesmanager.core.model.shipping.PackageDetails*
+
+%58double2setShippingWidth(D)Ã…
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaˇ  ˇ(=
+
+%60int"Ccom.salesmanager.core.model.shipping.ShippingProduct#getQuantity()I*I
+G
+shippingProduct4com.salesmanager.core.model.shipping.ShippingProduct2getQuantity()‚ﬂ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaˇ ˇ(>
+%61void"Kcom.salesmanager.core.model.shipping.PackageDetails#setShippingQuantity(I)V*?
+=
+detail3com.salesmanager.core.model.shipping.PackageDetails*
+
+
+%60int2setShippingQuantity(I)“
+œ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÄ Ä(!
+descriptionjava.lang.String"__id*
+item‚ﬂ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÅ Å(!
+%62java.util.Set"Tcom.salesmanager.core.model.catalog.product.Product#getDescriptions()Ljava/util/Set;*@
+>
+product3com.salesmanager.core.model.catalog.product.Product2getDescriptions()‰·
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÅ Å((
+
+%63int"java.util.Set#size()I*
+
+%62java.util.Set2size()*
+4
+5*¯
+7õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaˆ ˆ(Ã…
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaˆ ˆ(5
+
+%49int"Ccom.salesmanager.core.model.shipping.ShippingProduct#getQuantity()I*I
+G
+shippingProduct4com.salesmanager.core.model.shipping.ShippingProduct2getQuantity()*
+2
+6*¯
+9õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaı ı(Ã…
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaı ı(+
+
+%48int"Ccom.salesmanager.core.model.shipping.ShippingProduct#getQuantity()I*I
+G
+shippingProduct4com.salesmanager.core.model.shipping.ShippingProduct2getQuantity()*
+2
+7*π
+20õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java◊ ◊($»
+≈
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java◊ ◊($
+%20java.lang.Double"__id*
+""‘—
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java◊ ◊(
+%21java.math.BigDecimal"java.math.BigDecimalÉ
+Ä
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java◊	 ◊(%
+%22"java.math.BigDecimal#<init>(D)V*
+
+%21java.math.BigDecimal*
+
+%20java.lang.Double‚
+ﬂ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java◊ ◊(%
+wdjava.math.BigDecimal"__id*
+
+%21java.math.BigDecimal*
+13
+18*ƒ
+31õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaæ" æ(A—Œ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaæ& æ(?
+%0java.util.ArrayList"java.util.ArrayList„
+‡
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaæ" æ(A
+%1"java.util.ArrayList#<init>()V*
+
+%0java.util.ArrayList‡
+›
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaæ æ(B
+packagesjava.util.List"__id*
+
+%0java.util.ArrayList*
+2*÷
+10õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÚ Ú(
+âÜ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÚ Ú(#
+%46void"Tcom.salesmanager.core.model.shipping.PackageDetails#setItemName(Ljava/lang/String;)V*?
+=
+detail3com.salesmanager.core.model.shipping.PackageDetails*!
+
+descriptionjava.lang.String2setItemName(Ljava/lang/String;)†
+ù
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÙ Ù(
+%47boolean"
+__arrayAdd*
+
+packagesjava.util.List*: *?
+=
+detail3com.salesmanager.core.model.shipping.PackageDetails*
+2*º
+22õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java‘ ‘($»
+≈
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java‘ ‘($
+%17java.lang.Double"__id*
+""‘—
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java‘ ‘(
+%18java.math.BigDecimal"java.math.BigDecimalÉ
+Ä
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java‘ ‘(%
+%19"java.math.BigDecimal#<init>(D)V*
+
+%18java.math.BigDecimal*
+
+%17java.lang.Double·
+ﬁ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java‘ ‘(%
+ljava.math.BigDecimal"__id*
+
+%18java.math.BigDecimal*
+13
+18
+20*¬
+11õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java (‚ﬂ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java (,
+%42java.util.Set"Tcom.salesmanager.core.model.catalog.product.Product#getDescriptions()Ljava/util/Set;*@
+>
+product3com.salesmanager.core.model.catalog.product.Product2getDescriptions()éã
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java (7
+%43java.util.Iterator",java.util.Set#iterator()Ljava/util/Iterator;*
+
+%42java.util.Set2
+iterator()∆√
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java (>Q
+%44Jcom.salesmanager.core.model.catalog.product.description.ProductDescription"+java.util.Iterator#next()Ljava/lang/Object;*
+
+%43java.util.Iterator2next()ÚÔ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java (H
+%45java.lang.String"Vcom.salesmanager.core.model.common.description.Description#getName()Ljava/lang/String;*S
+Q
+%44Jcom.salesmanager.core.model.catalog.product.description.ProductDescription2	getName()„
+‡
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java (H
+descriptionjava.lang.String"__id*
+
+%45java.lang.String*
+10*Ñ'
+12õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java‰ ‰(0íè
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java‰  ‰(.:
+%283com.salesmanager.core.model.shipping.PackageDetails"3com.salesmanager.core.model.shipping.PackageDetails•
+¢
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java‰ ‰(0
+%29"=com.salesmanager.core.model.shipping.PackageDetails#<init>()V*<
+:
+%283com.salesmanager.core.model.shipping.PackageDetails§
+°
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.java‰ ‰(1=
+detail3com.salesmanager.core.model.shipping.PackageDetails"__id*<
+:
+%283com.salesmanager.core.model.shipping.PackageDetailsÅ˛
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÁ Ë(
+%30double"#java.math.BigDecimal#doubleValue()D*
+
+hjava.math.BigDecimal2doubleValue()·ﬁ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÁ Ë(
+%31void"Icom.salesmanager.core.model.shipping.PackageDetails#setShippingHeight(D)V*?
+=
+detail3com.salesmanager.core.model.shipping.PackageDetails*
+
+%30double2setShippingHeight(D)Å˛
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÈ Í(
+%32double"#java.math.BigDecimal#doubleValue()D*
+
+ljava.math.BigDecimal2doubleValue()·ﬁ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÈ Í(
+%33void"Icom.salesmanager.core.model.shipping.PackageDetails#setShippingLength(D)V*?
+=
+detail3com.salesmanager.core.model.shipping.PackageDetails*
+
+%32double2setShippingLength(D)Å˛
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÎ Î(,
+%34double"#java.math.BigDecimal#doubleValue()D*
+
+wjava.math.BigDecimal2doubleValue()·ﬁ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÎ Î(-
+%35void"Icom.salesmanager.core.model.shipping.PackageDetails#setShippingWeight(D)V*?
+=
+detail3com.salesmanager.core.model.shipping.PackageDetails*
+
+%34double2setShippingWeight(D)Çˇ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÏ Ï(,
+%36double"#java.math.BigDecimal#doubleValue()D*
+
+wdjava.math.BigDecimal2doubleValue()ﬂ‹
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÏ Ï(-
+%37void"Hcom.salesmanager.core.model.shipping.PackageDetails#setShippingWidth(D)V*?
+=
+detail3com.salesmanager.core.model.shipping.PackageDetails*
+
+%36double2setShippingWidth(D)Ã…
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÌ Ì(<
+
+%38int"Ccom.salesmanager.core.model.shipping.ShippingProduct#getQuantity()I*I
+G
+shippingProduct4com.salesmanager.core.model.shipping.ShippingProduct2getQuantity()‚ﬂ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÌ Ì(=
+%39void"Kcom.salesmanager.core.model.shipping.PackageDetails#setShippingQuantity(I)V*?
+=
+detail3com.salesmanager.core.model.shipping.PackageDetails*
+
+
+%38int2setShippingQuantity(I)“
+œ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÓ Ó( 
+descriptionjava.lang.String"__id*
+item‚ﬂ
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÔ Ô( 
+%40java.util.Set"Tcom.salesmanager.core.model.catalog.product.Product#getDescriptions()Ljava/util/Set;*@
+>
+product3com.salesmanager.core.model.catalog.product.Product2getDescriptions()‰·
+õ
+é/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/integration/shipping/impl/DefaultPackagingImpl.javaÔ Ô('
+
+%41int"java.util.Set#size()I*
+
+%40java.util.Set2size()*
+10
+11:
+productsjava.util.List:;
+store2com.salesmanager.core.model.merchant.MerchantStoreBYW
+Ucom.salesmanager.core.business.modules.integration.shipping.impl.DefaultPackagingImpl

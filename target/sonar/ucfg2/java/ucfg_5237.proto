@@ -1,0 +1,178 @@
+
+~com.salesmanager.core.business.modules.cms.content.infinispan.CmsStaticContentFileManagerImpl#removeFiles(Ljava/lang/String;)V£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÂ Â("paramAnnotations*™
+13£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÆ Æ(Ï
+Ì
+£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÆ Æ(
+%6org.slf4j.Logger"__id*
+""×Ô
+£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÆ Æ(P
+
+%7void"+org.slf4j.Logger#error(Ljava/lang/String;)V*
+
+%6org.slf4j.Logger*><
+:Unable to find cacheManager.getTreeCache() in Infinispan..2error(Ljava/lang/String;)¥¢
+£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÇ Ç( ?
+%89com.salesmanager.core.business.exception.ServiceException"9com.salesmanager.core.business.exception.ServiceException“
+
+£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÇ È(Q
+%9"Ucom.salesmanager.core.business.exception.ServiceException#<init>(Ljava/lang/String;)V*A
+?
+%89com.salesmanager.core.business.exception.ServiceException*HF
+DCmsImageFileManagerInfinispan has a null cacheManager.getTreeCache()*
+0*“
+14£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÄ Ä(
+Ï
+Ì
+£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÄ Ä(
+
+%0org.slf4j.Logger"__id*
+""Œ‰
+£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÄ Ä(J
+
+%1void"<org.slf4j.Logger#info(Ljava/lang/String;Ljava/lang/Object;)V*
+
+%0org.slf4j.Logger*(&
+$Removing all images for {} merchant *'
+%
+merchantStoreCodejava.lang.String2*info(Ljava/lang/String;Ljava/lang/Object;)è
+å
+£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÅ Å(B
+%2<com.salesmanager.core.business.modules.cms.impl.CacheManager"__id*s*q_
+]com.salesmanager.core.business.modules.cms.content.infinispan.CmsStaticContentFileManagerImpl"
+cacheManager
+£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÅ Å(##
+%3org.infinispan.tree.TreeCache"jcom.salesmanager.core.business.modules.cms.impl.CacheManager#getTreeCache()Lorg/infinispan/tree/TreeCache;*D
+B
+%2<com.salesmanager.core.business.modules.cms.impl.CacheManager2getTreeCache()*
+13
+11*”
+4£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÐ Ð(Kãà
+£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÐ Ð(K
+%19java.lang.Object"Eorg.infinispan.tree.Node#remove(Ljava/lang/Object;)Ljava/lang/Object;*!
+
+%17org.infinispan.tree.Node*
+
+%18java.lang.String2remove(Ljava/lang/Object;)*
+0*à
+5£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÐ3 Ð(?¯¬
+£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÐ3 Ð(J
+%18java.lang.String"4java.lang.StringBuilder#toString()Ljava/lang/String;*)
+'
+merchantPathjava.lang.StringBuilder2
+toString()*
+4*ñ
+6£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÐ Ð(+À½
+£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÐ Ð(+
+%17org.infinispan.tree.Node"Aorg.infinispan.tree.TreeCache#getRoot()Lorg/infinispan/tree/Node;*&
+$
+%16org.infinispan.tree.TreeCache2	getRoot()*
+5*¯
+7£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÐ Ð(é
+æ
+£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÐ Ð(C
+%15<com.salesmanager.core.business.modules.cms.impl.CacheManager"__id*s*q_
+]com.salesmanager.core.business.modules.cms.content.infinispan.CmsStaticContentFileManagerImpl"
+cacheManager’
+£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÐ Ð(!$
+%16org.infinispan.tree.TreeCache"jcom.salesmanager.core.business.modules.cms.impl.CacheManager#getTreeCache()Lorg/infinispan/tree/TreeCache;*E
+C
+%15<com.salesmanager.core.business.modules.cms.impl.CacheManager2getTreeCache()*
+6*®
+8£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÏ0 Ï(Aýú
+£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÏ Ï(B
+%14java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;* 
+
+%13java.lang.StringBuilder*'
+%
+merchantStoreCodejava.lang.String2append(Ljava/lang/String;)*
+7*©
+9£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÏ Ï((øõ
+£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÏ Ï((
+%13java.lang.StringBuilder"Kjava.lang.StringBuilder#append(Ljava/lang/String;)Ljava/lang/StringBuilder;*)
+'
+merchantPathjava.lang.StringBuilder*
+
+%12java.lang.String2append(Ljava/lang/String;)*
+8*µ
+paramAnnotations£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÂ Â(9„
+
+£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÀ À( 
+%4"
+__annotate*
+java.lang.SuppressWarnings*'
+%
+merchantStoreCodejava.lang.Stringü
+ù
+£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÁ Á(
+%5"
+__annotate*
+java.lang.Override*'
+%
+merchantStoreCodejava.lang.Stringî
+ë
+£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÂ' Â(8%
+merchantStoreCodejava.lang.String"__annotation*
+
+%4*
+
+%5*
+14*â
+10£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÎ Î(=ú
+÷
+£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÎ Î(='
+merchantPathjava.lang.StringBuilder"__id* 
+
+%10java.lang.StringBuilder³°
+£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÏ Ï('
+%12java.lang.String"}com.salesmanager.core.business.modules.cms.content.infinispan.CmsStaticContentFileManagerImpl#getRootName()Ljava/lang/String;*a_
+]com.salesmanager.core.business.modules.cms.content.infinispan.CmsStaticContentFileManagerImpl2getRootName()*
+9*Ã
+0 "»
+£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÙ Ù(
+implicit return*
+11£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÎ) Î(<âß
+£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÎ- Î(:
+%10java.lang.StringBuilder"java.lang.StringBuilderõ
+ò
+£
+–/Users/grager/github/shopizer/sm-core/src/main/java/com/salesmanager/core/business/modules/cms/content/infinispan/CmsStaticContentFileManagerImpl.javaÎ) Î(<
+%11"!java.lang.StringBuilder#<init>()V* 
+
+%10java.lang.StringBuilder*
+10:%
+merchantStoreCodejava.lang.StringBa_
+]com.salesmanager.core.business.modules.cms.content.infinispan.CmsStaticContentFileManagerImpl
